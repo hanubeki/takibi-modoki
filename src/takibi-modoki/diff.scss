@@ -66,6 +66,8 @@ html {
 .column-header {
   background: darken($ui-base-color, 12%);
   border: 0px solid lighten($ui-base-color, 8%);
+  border-bottom-width: 1px;
+  border-bottom-color: $ui-base-color;
 
   @media screen and (max-width: $no-gap-breakpoint) {
     border-top: 0;
@@ -75,6 +77,18 @@ html {
     top: -50px;
     right: 0;
   }
+}
+
+.status,
+.column-header__back-button,
+.column-header__button,
+.list-editor h4,
+.public-layout .header,
+.search-results__header,
+.search-results__section h5,
+a.column-link {
+  border-bottom-width: 1px;
+  border-bottom-color: $ui-base-color;
 }
 
 .column-header__back-button,
@@ -186,11 +200,16 @@ html {
 }
 
 .search__input {
+  background: lighten($ui-base-color, 4%);
   border-radius: 24px; /* 検索フォームの角を丸める */
 
   @media screen and (max-width: $no-gap-breakpoint) {
     border-top: 0;
     border-bottom: 0;
+  }
+
+  &::placeholder {
+    color: $dark-text-color;
   }
 }
 
@@ -220,6 +239,8 @@ html {
 .notification__filter-bar {
   border: 0px solid lighten($ui-base-color, 8%);
   border-top: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: $ui-base-color;
 }
 
 .compose-form .compose-form__buttons-wrapper {
@@ -236,6 +257,11 @@ html {
 
 .drawer__inner__mastodon {
   background: darken($ui-base-color, 12%) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="#{hex-color($ui-base-color)}"/></svg>') no-repeat bottom / 100% auto;
+}
+
+.drawer__header {
+  border-bottom-width: 1px;
+  border-bottom-color: $ui-base-color;
 }
 
 // Change the colors used in compose-form
@@ -590,7 +616,7 @@ html {
   &__link {
     padding-bottom: 14px;
     border-bottom-width: 1px;
-    border-bottom-color: lighten($ui-base-color, 8%);
+    border-bottom-color: $ui-base-color;
 
     &:hover,
     &:active,
@@ -845,6 +871,24 @@ html {
   a {
     color: $highlight-text-color;
   }
+}
+
+.status__relative-time,
+.status__expiration-time,
+.notification__relative_time {
+  color: mix($light-text-color, $dark-text-color, $method: oklab);
+}
+
+.status__content {
+  color: $dark-text-color;
+}
+
+.display-name {
+  color: $highlight-text-color;
+}
+
+.display-name__account {
+  color: $dark-text-color;
 }
 
 .button.logo-button {
