@@ -1,0 +1,43 @@
+// Dependent colors
+$black: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 30%);
+$white: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 90%);
+
+$classic-base-color: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 30%);
+$classic-primary-color: hsl($takibi-modoki-highlight-hue, 60%, 70%);
+$classic-secondary-color: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 80%);
+$classic-highlight-color: hsl($takibi-modoki-highlight-hue, 75%, 50%);
+
+// Differences
+$success-green: lighten(#3c754d, 8%);
+
+$base-overlay-background: $white !default;
+$valid-value-color: $success-green !default;
+
+$ui-base-color: $classic-secondary-color !default;
+$ui-base-lighter-color: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 78%);
+$ui-primary-color: hsl($takibi-modoki-highlight-hue, 60%, 70%);
+$ui-secondary-color: $classic-base-color !default;
+$ui-highlight-color: hsl($takibi-modoki-highlight-hue, 75%, 50%);
+
+$primary-text-color: $black !default;
+$darker-text-color: $classic-base-color !default;
+$dark-text-color: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 50%);
+$action-button-color: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 60%);
+
+$inverted-text-color: $black !default;
+$lighter-text-color: $classic-base-color !default;
+$light-text-color: hsl($takibi-modoki-base-hue, $takibi-modoki-base-sat, 30%);
+
+//Newly added colors
+$account-background-color: $white !default;
+
+//Invert darkened and lightened colors
+@function darken($color, $amount) {
+  @return hsl(hue($color), saturation($color), lightness($color) + $amount);
+}
+
+@function lighten($color, $amount) {
+  @return hsl(hue($color), saturation($color), lightness($color) - $amount);
+}
+
+$emojis-requiring-inversion: 'chains';
