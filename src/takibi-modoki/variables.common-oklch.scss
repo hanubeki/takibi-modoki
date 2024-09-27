@@ -1,5 +1,5 @@
 $takibi-modoki-base-hue: 90deg !default; // +45deg from hsl version
-$takibi-modoki-base-sat: 2% !default;
+$takibi-modoki-base-sat: 1.5% !default;
 $takibi-modoki-highlight-hue: 60deg !default; // +30deg from hsl version
 
 @use "sass:color";
@@ -10,7 +10,7 @@ $white: color.to-space(oklch(90% $takibi-modoki-base-sat $takibi-modoki-base-hue
 
 $classic-base-color: color.to-space(oklch(50% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
 $classic-primary-color: color.to-space(oklch(80% 20% $takibi-modoki-highlight-hue), rgb);
-$classic-secondary-color: color.to-space(oklch(87.5% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
+$classic-secondary-color: color.to-space(oklch(88% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
 $classic-highlight-color: color.to-space(oklch(70% 40% $takibi-modoki-highlight-hue), rgb);
 
 // Differences
