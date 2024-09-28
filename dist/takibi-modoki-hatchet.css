@@ -14479,6 +14479,13 @@ html {
   color: #ffffff;
 }
 
+.status-card .status-card__content {
+  background: rgb(242.1185710683, 237.2301078635, 235.1276270181);
+}
+.status-card:hover .status-card__content {
+  background: rgb(236.6586395228, 169.0333250905, 173.1311841378);
+}
+
 .status-card__actions button,
 .status-card__actions a {
   color: rgba(255, 255, 255, 0.8);
@@ -14560,6 +14567,10 @@ a.column-link {
 .directory__card__extra,
 .status-reactioned__back-to-post-button {
   background: rgb(242.1185710683, 237.2301078635, 235.1276270181);
+}
+
+.column-header__back-button {
+  color: rgb(102.3236352192, 98.1737611372, 96.384615265);
 }
 
 .public-layout .directory__card,
@@ -14670,6 +14681,10 @@ a.column-link {
   .getting-started .navigation-bar {
     border-top: 0;
   }
+}
+
+.compose__action-bar-dropdown .icon-button.active {
+  color: rgb(240.586618164, 110.8198222305, 125.923068234);
 }
 
 .compose-form__autosuggest-wrapper,
@@ -15085,6 +15100,7 @@ a.column-link {
   padding-bottom: 14px;
   border-bottom-width: 1px;
   border-bottom-color: rgb(219.0222095783, 214.2278451149, 212.1653841301);
+  color: rgb(102.3236352192, 98.1737611372, 96.384615265);
 }
 .tabs-bar__link:hover, .tabs-bar__link:active, .tabs-bar__link:focus {
   background: rgb(219.0222095783, 214.2278451149, 212.1653841301);
@@ -15308,10 +15324,6 @@ a.column-link {
 .status__expiration-time,
 .notification__relative_time {
   color: rgb(131.4345779255, 127.0861565233, 125.2129816684);
-}
-
-.status__content {
-  color: rgb(161.7629953193, 157.239938376, 155.2927186855);
 }
 
 .display-name {

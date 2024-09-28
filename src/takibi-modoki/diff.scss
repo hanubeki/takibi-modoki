@@ -19,6 +19,16 @@ html {
   }
 }
 
+.status-card {
+  .status-card__content {
+    background: darken($ui-base-color, 14%);
+  }
+
+  &:hover .status-card__content {
+    background: $ui-primary-color;
+  }
+}
+
 .status-card__actions button,
 .status-card__actions a {
   color: rgba($white, 0.8);
@@ -101,6 +111,11 @@ a.column-link {
   background: darken($ui-base-color, 14%);
 }
 
+.column-header__back-button {
+  color: $light-text-color;
+}
+
+
 .public-layout .directory__card,
 .columns-area--mobile .directory__card {
   background: darken($ui-base-color, 14%);
@@ -179,6 +194,10 @@ a.column-link {
   @media screen and (max-width: $no-gap-breakpoint) {
     border-top: 0;
   }
+}
+
+.compose__action-bar-dropdown .icon-button.active {
+  color: $ui-highlight-color;
 }
 
 .compose-form__autosuggest-wrapper,
@@ -617,6 +636,7 @@ a.column-link {
     padding-bottom: 14px;
     border-bottom-width: 1px;
     border-bottom-color: $ui-base-color;
+    color: $light-text-color;
 
     &:hover,
     &:active,
@@ -877,10 +897,6 @@ a.column-link {
 .status__expiration-time,
 .notification__relative_time {
   color: mix($light-text-color, $dark-text-color, $method: oklab);
-}
-
-.status__content {
-  color: $dark-text-color;
 }
 
 .display-name {
