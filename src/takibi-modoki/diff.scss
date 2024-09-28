@@ -1011,11 +1011,11 @@ a.column-link {
       }
 
       .avatar img {
-        border-color: $account-background-color;
+        border-color: darken($ui-base-color, 14%);
       }
 
       @media screen and (max-width: $no-columns-breakpoint) {
-        background: $account-background-color;
+        background: darken($ui-base-color, 14%);
         border: 0px solid lighten($ui-base-color, 8%);
         border-top: 0;
       }

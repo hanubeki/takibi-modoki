@@ -15425,11 +15425,11 @@ a.column-link {
   border-top: 0;
 }
 .public-layout .public-account-header__bar .avatar img {
-  border-color: rgb(221.2444252483, 222.531916951, 218.1906449605);
+  border-color: rgb(237.7258302729, 239.031336543, 234.6313338744);
 }
 @media screen and (max-width: 600px) {
   .public-layout .public-account-header__bar {
-    background: rgb(221.2444252483, 222.531916951, 218.1906449605);
+    background: rgb(237.7258302729, 239.031336543, 234.6313338744);
     border: 0px solid rgb(201.7683909947, 203.0332169498, 198.7657218518);
     border-top: 0;
   }
