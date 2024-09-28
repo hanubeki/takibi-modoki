@@ -190,6 +190,7 @@ a.column-link {
 .column-subheading {
   background: darken($ui-base-color, 4%);
   border-bottom: 0px solid lighten($ui-base-color, 8%);
+  color: $light-text-color;
 }
 
 .getting-started,
@@ -200,7 +201,7 @@ a.column-link {
   .circle-edit-button,
   .circle-delete-button {
     background: darken($ui-base-color, 14%);
-    border-bottom: 0px solid lighten($ui-base-color, 8%);
+    border-bottom: 1px solid $ui-base-color;
 
     &:hover,
     &:active,

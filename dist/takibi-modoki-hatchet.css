@@ -14652,6 +14652,7 @@ a.column-link {
 .column-subheading {
   background: rgb(225.5765007251, 220.7546865111, 218.6805536852);
   border-bottom: 0px solid rgb(206.0241385135, 201.2861303535, 199.247625908);
+  color: rgb(102.3236352192, 98.1737611372, 96.384615265);
 }
 
 .getting-started .column-link,
@@ -14665,7 +14666,7 @@ a.column-link {
 .scrollable .circle-edit-button,
 .scrollable .circle-delete-button {
   background: rgb(242.1185710683, 237.2301078635, 235.1276270181);
-  border-bottom: 0px solid rgb(206.0241385135, 201.2861303535, 199.247625908);
+  border-bottom: 1px solid rgb(219.0222095783, 214.2278451149, 212.1653841301);
 }
 .getting-started .column-link:hover, .getting-started .column-link:active, .getting-started .column-link:focus,
 .getting-started .list-favourite-button:hover,
