@@ -145,6 +145,23 @@ a.column-link {
   border-color: $white;
 }
 
+.account__section-headline {
+  background: darken($ui-base-color, 14%);
+}
+
+.account__header__bar {
+  border-bottom: 0px solid lighten($ui-base-color, 8%);
+}
+
+.account__header__extra__hashtag-links {
+  background: darken($ui-base-color, 4%);
+
+  a.active {
+    color: $darker-text-color;
+    background:lighten($ui-base-color, 8%);
+  }
+}
+
 .getting-started__footer a {
   color: $ui-secondary-color;
   text-decoration: underline;
@@ -1022,9 +1039,12 @@ a.column-link {
 }
 
 .notification__filter-bar button.active::after,
-.account__section-headline a.active::after,
 .status__section-headline a.active::after {
   border-color: transparent transparent darken($ui-base-color, 14%);
+}
+
+.account__section-headline a.active::after {
+  border-color: transparent transparent lighten($ui-base-color, 8%);
 }
 
 .hero-widget,

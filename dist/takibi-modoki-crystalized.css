@@ -14600,6 +14600,22 @@ a.column-link {
   border-color: #ffffff;
 }
 
+.account__section-headline {
+  background: rgb(237.7258302729, 239.031336543, 234.6313338744);
+}
+
+.account__header__bar {
+  border-bottom: 0px solid rgb(201.7683909947, 203.0332169498, 198.7657218518);
+}
+
+.account__header__extra__hashtag-links {
+  background: rgb(221.2444252483, 222.531916951, 218.1906449605);
+}
+.account__header__extra__hashtag-links a.active {
+  color: rgb(98.6054188867, 99.710597348, 95.9579239372);
+  background: rgb(201.7683909947, 203.0332169498, 198.7657218518);
+}
+
 .getting-started__footer a {
   color: rgb(98.6054188867, 99.710597348, 95.9579239372);
   text-decoration: underline;
@@ -15426,9 +15442,12 @@ a.column-link {
 }
 
 .notification__filter-bar button.active::after,
-.account__section-headline a.active::after,
 .status__section-headline a.active::after {
   border-color: transparent transparent rgb(237.7258302729, 239.031336543, 234.6313338744);
+}
+
+.account__section-headline a.active::after {
+  border-color: transparent transparent rgb(201.7683909947, 203.0332169498, 198.7657218518);
 }
 
 .hero-widget,
