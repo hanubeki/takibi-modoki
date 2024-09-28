@@ -14580,6 +14580,7 @@ a.column-link {
   background: rgb(240.8424764832, 236.9952997289, 240.3023908719);
 }
 
+.column-back-button,
 .column-header__back-button,
 .column-header > .column-header__back-button {
   color: rgb(101.2473301621, 97.9760018887, 100.7948627305);
