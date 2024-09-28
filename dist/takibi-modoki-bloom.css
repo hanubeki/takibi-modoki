@@ -14676,6 +14676,9 @@ a.column-link {
 .navigation-panel .column-link {
   background: rgb(235.713011217, 239.5758953123, 236.2736930274);
 }
+.navigation-panel .column-link:hover {
+  background: transparent;
+}
 
 .getting-started .navigation-bar {
   border-top: 0px solid rgb(199.8143339078, 203.5612446831, 200.3593671846);
@@ -14772,6 +14775,10 @@ a.column-link {
 .drawer__header {
   border-bottom-width: 1px;
   border-bottom-color: rgb(212.7390955367, 216.52941573, 213.2899723674);
+}
+.drawer__header a:hover {
+  background: rgb(146.3583616042, 171.8196029246, 24.4000574882);
+  color: #ffffff;
 }
 
 .compose-form .compose-form__modifiers .compose-form__upload__actions .icon-button {

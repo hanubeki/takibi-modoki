@@ -188,6 +188,10 @@ a.column-link {
 
 .navigation-panel .column-link {
   background: darken($ui-base-color, 14%);
+
+  &:hover {
+    background: transparent;
+  }
 }
 
 .getting-started .navigation-bar {
@@ -284,6 +288,11 @@ a.column-link {
 .drawer__header {
   border-bottom-width: 1px;
   border-bottom-color: $ui-base-color;
+
+  a:hover {
+    background: $ui-highlight-color;
+    color: $white;
+  }
 }
 
 // Change the colors used in compose-form
