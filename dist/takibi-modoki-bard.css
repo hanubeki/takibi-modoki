@@ -15120,7 +15120,7 @@ a.column-link {
 .empty-column-indicator,
 .error-column {
   color: rgb(42.7409572976, 46.4716074239, 48.0556269382);
-  background: #ffffff;
+  background: rgb(234.4072309, 239.3352589709, 241.4425454654);
 }
 
 .tabs-bar {

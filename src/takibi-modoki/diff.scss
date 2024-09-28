@@ -657,7 +657,7 @@ a.column-link {
 .empty-column-indicator,
 .error-column {
   color: $primary-text-color;
-  background: $white;
+  background: darken($ui-base-color, 14%);
 }
 
 .tabs-bar {
