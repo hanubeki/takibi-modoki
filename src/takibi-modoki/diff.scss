@@ -92,6 +92,7 @@ html {
 }
 
 .status,
+.account__section-headline,
 .column-header__back-button,
 .column-header__button,
 .list-editor h4,
@@ -154,11 +155,11 @@ a.column-link {
 }
 
 .account__header__extra__hashtag-links {
-  background: darken($ui-base-color, 4%);
+  background: darken($ui-base-color, 7%);
 
   a.active {
     color: $darker-text-color;
-    background:lighten($ui-base-color, 8%);
+    background: lighten($ui-base-color, 8%);
   }
 }
 

@@ -14551,6 +14551,7 @@ html {
 }
 
 .status,
+.account__section-headline,
 .column-header__back-button,
 .column-header__button,
 .list-editor h4,
@@ -14609,7 +14610,7 @@ a.column-link {
 }
 
 .account__header__extra__hashtag-links {
-  background: rgb(223.3611772497, 221.7959996866, 217.5390138819);
+  background: rgb(228.2909077864, 226.7193835792, 222.4449190581);
 }
 .account__header__extra__hashtag-links a.active {
   color: rgb(100.431193601, 99.0742930632, 95.3925749838);
