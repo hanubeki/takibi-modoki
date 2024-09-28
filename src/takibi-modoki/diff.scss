@@ -978,7 +978,7 @@ a.column-link {
   }
 
   .header {
-    background: $ui-base-color;
+    background: darken($ui-base-color, 14%);
     border: 0px solid lighten($ui-base-color, 8%);
 
     @media screen and (max-width: $no-gap-breakpoint) {
