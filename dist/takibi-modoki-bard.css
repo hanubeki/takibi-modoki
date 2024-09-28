@@ -14468,15 +14468,22 @@ html {
   scrollbar-color: rgb(211.4568448338, 216.2931130684, 218.3606555115) rgba(211.4568448338, 216.2931130684, 218.3606555115, 0.25);
 }
 
-.button {
+.button,
+.button.logo-button {
   background: rgb(124.6434203083, 206.242780472, 205.577724221);
   color: #ffffff;
 }
-.button:hover {
+.button:hover,
+.button.logo-button:hover {
   background: hsl(180.3643554186, 288.7032174163%, 19.0696590706%);
 }
-.button.button-alternative-2 {
+.button.button-alternative-2,
+.button.logo-button.button-alternative-2 {
   color: #ffffff;
+}
+
+.public-layout .header .nav-button {
+  background: rgb(124.6434203083, 206.242780472, 205.577724221);
 }
 
 .status-card {
@@ -15265,7 +15272,7 @@ a.column-link {
   border-top: 0;
 }
 .activity-stream .entry {
-  background: rgb(217.9685680858, 222.8315852551, 224.9107168484);
+  background: rgb(234.4072309, 239.3352589709, 241.4425454654);
 }
 .activity-stream .entry .detailed-status.light,
 .activity-stream .entry .more.light,
@@ -15376,6 +15383,8 @@ a.column-link {
 .public-layout .account__section-headline,
 .public-layout .status__section-headline {
   border: 0px solid rgb(198.5461281593, 203.3275292284, 205.3712909544);
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(211.4568448338, 216.2931130684, 218.3606555115);
 }
 @media screen and (max-width: 415px) {
   .public-layout .account__section-headline,
@@ -15390,7 +15399,7 @@ a.column-link {
 }
 .public-layout .public-account-bio,
 .public-layout .hero-widget__text {
-  background: rgb(217.9685680858, 222.8315852551, 224.9107168484);
+  background: rgb(234.4072309, 239.3352589709, 241.4425454654);
 }
 .public-layout .header {
   background: rgb(211.4568448338, 216.2931130684, 218.3606555115);
@@ -15411,7 +15420,7 @@ a.column-link {
   box-shadow: none;
 }
 .public-layout .public-account-header__bar::before {
-  background: rgb(217.9685680858, 222.8315852551, 224.9107168484);
+  background: rgb(234.4072309, 239.3352589709, 241.4425454654);
   border: 0px solid rgb(198.5461281593, 203.3275292284, 205.3712909544);
   border-top: 0;
 }

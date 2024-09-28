@@ -14468,15 +14468,22 @@ html {
   scrollbar-color: rgb(213.7218089277, 215.2616425462, 219.4783656792) rgba(213.7218089277, 215.2616425462, 219.4783656792, 0.25);
 }
 
-.button {
+.button,
+.button.logo-button {
   background: rgb(142.0705092409, 197.2004078435, 236.4460774297);
   color: #ffffff;
 }
-.button:hover {
+.button:hover,
+.button.logo-button:hover {
   background: rgb(2.0733279766, 168.78728307, 246.6848130853);
 }
-.button.button-alternative-2 {
+.button.button-alternative-2,
+.button.logo-button.button-alternative-2 {
   color: #ffffff;
+}
+
+.public-layout .header .nav-button {
+  background: rgb(142.0705092409, 197.2004078435, 236.4460774297);
 }
 
 .status-card {
@@ -15265,7 +15272,7 @@ a.column-link {
   border-top: 0;
 }
 .activity-stream .entry {
-  background: rgb(220.2455628193, 221.7942615081, 226.0349100223);
+  background: rgb(236.7135009022, 238.2837200964, 242.5824743679);
 }
 .activity-stream .entry .detailed-status.light,
 .activity-stream .entry .more.light,
@@ -15376,6 +15383,8 @@ a.column-link {
 .public-layout .account__section-headline,
 .public-layout .status__section-headline {
   border: 0px solid rgb(200.7864436026, 202.3080732081, 206.4756869125);
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(213.7218089277, 215.2616425462, 219.4783656792);
 }
 @media screen and (max-width: 415px) {
   .public-layout .account__section-headline,
@@ -15390,7 +15399,7 @@ a.column-link {
 }
 .public-layout .public-account-bio,
 .public-layout .hero-widget__text {
-  background: rgb(220.2455628193, 221.7942615081, 226.0349100223);
+  background: rgb(236.7135009022, 238.2837200964, 242.5824743679);
 }
 .public-layout .header {
   background: rgb(213.7218089277, 215.2616425462, 219.4783656792);
@@ -15411,7 +15420,7 @@ a.column-link {
   box-shadow: none;
 }
 .public-layout .public-account-header__bar::before {
-  background: rgb(220.2455628193, 221.7942615081, 226.0349100223);
+  background: rgb(236.7135009022, 238.2837200964, 242.5824743679);
   border: 0px solid rgb(200.7864436026, 202.3080732081, 206.4756869125);
   border-top: 0;
 }

@@ -14468,15 +14468,22 @@ html {
   scrollbar-color: rgb(219.0222095783, 214.2278451149, 212.1653841301) rgba(219.0222095783, 214.2278451149, 212.1653841301, 0.25);
 }
 
-.button {
+.button,
+.button.logo-button {
   background: rgb(236.6586395228, 169.0333250905, 173.1311841378);
   color: #ffffff;
 }
-.button:hover {
+.button:hover,
+.button.logo-button:hover {
   background: rgb(240.586618164, 110.8198222305, 125.923068234);
 }
-.button.button-alternative-2 {
+.button.button-alternative-2,
+.button.logo-button.button-alternative-2 {
   color: #ffffff;
+}
+
+.public-layout .header .nav-button {
+  background: rgb(236.6586395228, 169.0333250905, 173.1311841378);
 }
 
 .status-card {
@@ -15265,7 +15272,7 @@ a.column-link {
   border-top: 0;
 }
 .activity-stream .entry {
-  background: rgb(225.5765007251, 220.7546865111, 218.6805536852);
+  background: rgb(242.1185710683, 237.2301078635, 235.1276270181);
 }
 .activity-stream .entry .detailed-status.light,
 .activity-stream .entry .more.light,
@@ -15376,6 +15383,8 @@ a.column-link {
 .public-layout .account__section-headline,
 .public-layout .status__section-headline {
   border: 0px solid rgb(206.0241385135, 201.2861303535, 199.247625908);
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(219.0222095783, 214.2278451149, 212.1653841301);
 }
 @media screen and (max-width: 415px) {
   .public-layout .account__section-headline,
@@ -15390,7 +15399,7 @@ a.column-link {
 }
 .public-layout .public-account-bio,
 .public-layout .hero-widget__text {
-  background: rgb(225.5765007251, 220.7546865111, 218.6805536852);
+  background: rgb(242.1185710683, 237.2301078635, 235.1276270181);
 }
 .public-layout .header {
   background: rgb(219.0222095783, 214.2278451149, 212.1653841301);
@@ -15411,7 +15420,7 @@ a.column-link {
   box-shadow: none;
 }
 .public-layout .public-account-header__bar::before {
-  background: rgb(225.5765007251, 220.7546865111, 218.6805536852);
+  background: rgb(242.1185710683, 237.2301078635, 235.1276270181);
   border: 0px solid rgb(206.0241385135, 201.2861303535, 199.247625908);
   border-top: 0;
 }

@@ -6,7 +6,8 @@ html {
 }
 
 // Change the colors of button texts
-.button {
+.button,
+.button.logo-button {
   background: $ui-primary-color;
   color: $white;
 
@@ -17,6 +18,10 @@ html {
   &.button-alternative-2 {
     color: $white;
   }
+}
+
+.public-layout .header .nav-button {
+  background: $ui-primary-color;
 }
 
 .status-card {
@@ -816,7 +821,7 @@ a.column-link {
   }
 
   .entry {
-    background: $account-background-color;
+    background: darken($ui-base-color, 14%);
 
     .detailed-status.light,
     .more.light,
@@ -953,6 +958,8 @@ a.column-link {
   .account__section-headline,
   .status__section-headline {
     border: 0px solid lighten($ui-base-color, 8%);
+    border-bottom-width: 1px;
+    border-bottom-color: $ui-base-color;
 
     @media screen and (max-width: $no-gap-breakpoint) {
       border-top: 0;
@@ -967,7 +974,7 @@ a.column-link {
 
   .public-account-bio,
   .hero-widget__text {
-    background: $account-background-color;
+    background: darken($ui-base-color, 14%);
   }
 
   .header {
@@ -998,7 +1005,7 @@ a.column-link {
 
     &__bar {
       &::before {
-        background: $account-background-color;
+        background: darken($ui-base-color, 14%);
         border: 0px solid lighten($ui-base-color, 8%);
         border-top: 0;
       }

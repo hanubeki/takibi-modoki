@@ -14468,15 +14468,22 @@ html {
   scrollbar-color: rgb(214.715128673, 215.9951982113, 211.6781001927) rgba(214.715128673, 215.9951982113, 211.6781001927, 0.25);
 }
 
-.button {
+.button,
+.button.logo-button {
   background: rgb(209.6623236792, 188.0102207258, 129.6247852269);
   color: #ffffff;
 }
-.button:hover {
+.button:hover,
+.button.logo-button:hover {
   background: hsl(48.8508576383, 161.1858425979%, 29.5649623009%);
 }
-.button.button-alternative-2 {
+.button.button-alternative-2,
+.button.logo-button.button-alternative-2 {
   color: #ffffff;
+}
+
+.public-layout .header .nav-button {
+  background: rgb(209.6623236792, 188.0102207258, 129.6247852269);
 }
 
 .status-card {
@@ -15265,7 +15272,7 @@ a.column-link {
   border-top: 0;
 }
 .activity-stream .entry {
-  background: rgb(221.2444252483, 222.531916951, 218.1906449605);
+  background: rgb(237.7258302729, 239.031336543, 234.6313338744);
 }
 .activity-stream .entry .detailed-status.light,
 .activity-stream .entry .more.light,
@@ -15376,6 +15383,8 @@ a.column-link {
 .public-layout .account__section-headline,
 .public-layout .status__section-headline {
   border: 0px solid rgb(201.7683909947, 203.0332169498, 198.7657218518);
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(214.715128673, 215.9951982113, 211.6781001927);
 }
 @media screen and (max-width: 415px) {
   .public-layout .account__section-headline,
@@ -15390,7 +15399,7 @@ a.column-link {
 }
 .public-layout .public-account-bio,
 .public-layout .hero-widget__text {
-  background: rgb(221.2444252483, 222.531916951, 218.1906449605);
+  background: rgb(237.7258302729, 239.031336543, 234.6313338744);
 }
 .public-layout .header {
   background: rgb(214.715128673, 215.9951982113, 211.6781001927);
@@ -15411,7 +15420,7 @@ a.column-link {
   box-shadow: none;
 }
 .public-layout .public-account-header__bar::before {
-  background: rgb(221.2444252483, 222.531916951, 218.1906449605);
+  background: rgb(237.7258302729, 239.031336543, 234.6313338744);
   border: 0px solid rgb(201.7683909947, 203.0332169498, 198.7657218518);
   border-top: 0;
 }
