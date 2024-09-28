@@ -5,13 +5,13 @@ $takibi-modoki-highlight-hue: 60deg !default; // +30deg from hsl version
 @use "sass:color";
 
 // Dependent colors
-$black: color.to-space(oklch(30% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
-$white: color.to-space(oklch(90% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
+$black: color.to-space(color.to-gamut(oklch(30% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$white: color.to-space(color.to-gamut(oklch(90% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
 
-$classic-base-color: color.to-space(oklch(50% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
-$classic-primary-color: color.to-space(oklch(80% 20% $takibi-modoki-highlight-hue), rgb);
-$classic-secondary-color: color.to-space(oklch(88% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
-$classic-highlight-color: color.to-space(oklch(70% 40% $takibi-modoki-highlight-hue), rgb);
+$classic-base-color: color.to-space(color.to-gamut(oklch(50% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$classic-primary-color: color.to-space(color.to-gamut(oklch(80% 20% $takibi-modoki-highlight-hue), srgb, local-minde), rgb);
+$classic-secondary-color: color.to-space(color.to-gamut(oklch(88% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$classic-highlight-color: color.to-space(color.to-gamut(oklch(70% 40% $takibi-modoki-highlight-hue), srgb, local-minde), rgb);
 
 // Differences
 $success-green: lighten(#3c754d, 8%);
@@ -20,30 +20,30 @@ $base-overlay-background: $white !default;
 $valid-value-color: $success-green !default;
 
 $ui-base-color: $classic-secondary-color !default;
-$ui-base-lighter-color: color.to-space(oklch(85% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
-$ui-primary-color: color.to-space(oklch(80% 20% $takibi-modoki-highlight-hue), rgb);
+$ui-base-lighter-color: color.to-space(color.to-gamut(oklch(85% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$ui-primary-color: color.to-space(color.to-gamut(oklch(80% 20% $takibi-modoki-highlight-hue), srgb, local-minde), rgb);
 $ui-secondary-color: $classic-base-color !default;
-$ui-highlight-color: color.to-space(oklch(70% 40% $takibi-modoki-highlight-hue), rgb);
+$ui-highlight-color: color.to-space(color.to-gamut(oklch(70% 40% $takibi-modoki-highlight-hue), srgb, local-minde), rgb);
 
 $primary-text-color: $black !default;
 $darker-text-color: $classic-base-color !default;
-$dark-text-color: color.to-space(oklch(70% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
-$action-button-color: color.to-space(oklch(80% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
+$dark-text-color: color.to-space(color.to-gamut(oklch(70% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$action-button-color: color.to-space(color.to-gamut(oklch(80% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
 
 $inverted-text-color: $black !default;
 $lighter-text-color: $classic-base-color !default;
-$light-text-color: color.to-space(oklch(50% $takibi-modoki-base-sat $takibi-modoki-base-hue), rgb);
+$light-text-color: color.to-space(color.to-gamut(oklch(50% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
 
 //Newly added colors
 $account-background-color: $white !default;
 
 //Invert darkened and lightened colors
 @function darken($color, $amount) {
-  @return color.to-space(color.adjust($color, $lightness: calc($amount * 0.5), $space: oklch), rgb);
+  @return color.to-space(color.to-gamut(color.adjust($color, $lightness: calc($amount * 0.5), $space: oklch), srgb, local-minde), rgb);
 }
 
 @function lighten($color, $amount) {
-  @return color.to-space(color.adjust($color, $lightness: calc($amount * -0.5), $space: oklch), rgb);
+  @return color.to-space(color.to-gamut(color.adjust($color, $lightness: calc($amount * -0.5), $space: oklch), srgb, local-minde), rgb);
 }
 
 $emojis-requiring-inversion: 'chains';

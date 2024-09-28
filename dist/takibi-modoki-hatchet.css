@@ -3096,9 +3096,9 @@ code {
 .simple_form .fedibird_features.conditional,
 .simple_form .beta_features.conditional,
 .simple_form .recommended.conditional {
-  color: hsl(43.8462105804, 144.0394389285%, 29.3279899186%);
-  background-color: hsla(43.8462105804, 144.0394389285%, 29.3279899186%, 0.1);
-  border-color: hsla(43.8462105804, 144.0394389285%, 29.3279899186%, 0.5);
+  color: rgb(182.5082482185, 124.5043659755, 0);
+  background-color: rgba(182.5082482185, 124.5043659755, 0, 0.1);
+  border-color: rgba(182.5082482185, 124.5043659755, 0, 0.5);
 }
 .account-role.float,
 .fedibird_features.float,
@@ -4007,7 +4007,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 .compose-form .compose-form__buttons-wrapper {
   padding: 10px;
-  background: hsl(341.25, 0.0000206391%, 100.0000008607%);
+  background: white;
   border-radius: 0 0 4px 4px;
   display: flex;
   justify-content: space-between;
@@ -6419,7 +6419,7 @@ a.account__display-name:hover strong {
   height: 22px;
   border: 1px solid rgb(219.0222095783, 214.2278451149, 212.1653841301);
   border-radius: 50%;
-  background-color: hsl(341.25, 0.0000206391%, 100.0000008607%);
+  background-color: white;
   box-sizing: border-box;
   transition: all 0.25s ease;
   transition-property: border-color, left;
@@ -8715,7 +8715,7 @@ a.status-card.compact:hover {
   outline: 0;
   font-family: inherit;
   background: #ffffff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23FFFFFF'/></svg>") no-repeat right 8px center/auto 16px;
-  border: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border: 1px solid white;
   border-radius: 4px;
   padding: 6px 10px;
   padding-right: 30px;
@@ -8773,7 +8773,7 @@ a.status-card.compact:hover {
   border-radius: 4px;
 }
 .confirmation-modal__passphrase .passphrase__input.invalid {
-  background-color: hsl(337.9166720526, 141.2774115534%, 26.107415389%);
+  background-color: rgb(159.9935548545, 0, 42.2055084652);
 }
 
 .block-modal__explanation,
@@ -11053,7 +11053,7 @@ noscript div a:hover {
   position: relative;
   display: none;
   background-color: #ffffff;
-  border: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border: 1px solid white;
   border-radius: 4px;
 }
 .circle-dropdown.circle-dropdown--visible {
@@ -11333,7 +11333,7 @@ noscript div a:hover {
   outline: 0;
   font-family: inherit;
   background: #ffffff;
-  border: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border: 1px solid white;
   border-radius: 4px;
   padding: 6px 10px;
 }
@@ -11424,13 +11424,13 @@ noscript div a:hover {
 }
 
 .compose-form__poll-wrapper {
-  border-top: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border-top: 1px solid white;
 }
 .compose-form__poll-wrapper ul {
   padding: 10px;
 }
 .compose-form__poll-wrapper .poll__footer {
-  border-top: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border-top: 1px solid white;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -11472,20 +11472,20 @@ noscript div a:hover {
   outline: 0;
   font-family: inherit;
   background: #ffffff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23FFFFFF'/></svg>") no-repeat right 8px center/auto 16px;
-  border: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border: 1px solid white;
   border-radius: 4px;
   padding: 6px 10px;
   padding-right: 30px;
 }
 .compose-form__poll-wrapper .icon-button.disabled {
-  color: hsl(341.25, 0.0000206391%, 100.0000008607%);
+  color: white;
 }
 
 .muted .poll {
   color: rgb(161.7629953193, 157.239938376, 155.2927186855);
 }
 .muted .poll__chart {
-  background: hsla(356.5304231177, 119.0379354295%, 88.5949828426%, 0.2);
+  background: rgba(255, 191.2976490019, 195.3014895186, 0.2);
 }
 .muted .poll__chart.leading {
   background: rgba(240.586618164, 110.8198222305, 125.923068234, 0.2);
@@ -11493,7 +11493,7 @@ noscript div a:hover {
 
 .compose-form .compose-form__datetime-wrapper .datetime__schedule,
 .compose-form .compose-form__datetime-wrapper .datetime__expire {
-  border-top: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border-top: 1px solid white;
   padding: 10px;
 }
 .compose-form .compose-form__datetime-wrapper .datetime__schedule .datetime-dropdown,
@@ -11506,7 +11506,7 @@ noscript div a:hover {
 }
 .compose-form .compose-form__datetime-wrapper .datetime__schedule .datetime-dropdown .datetime-dropdown__input-invalid,
 .compose-form .compose-form__datetime-wrapper .datetime__expire .datetime-dropdown .datetime-dropdown__input-invalid {
-  background-color: hsl(337.9166720526, 141.2774115534%, 26.107415389%);
+  background-color: rgb(159.9935548545, 0, 42.2055084652);
 }
 .compose-form .compose-form__datetime-wrapper .datetime__schedule .datetime-dropdown .datetime-dropdown__calendar-icon,
 .compose-form .compose-form__datetime-wrapper .datetime__schedule .datetime-dropdown select,
@@ -11533,7 +11533,7 @@ noscript div a:hover {
 .compose-form .compose-form__datetime-wrapper .datetime__expires-indicator {
   color: rgb(48.5291178683, 44.8928462569, 43.3200652457);
   background: rgb(223.1848052875, 156.5258064841, 160.6883265003);
-  border-top: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border-top: 1px solid white;
   padding: 10px;
   font-size: 13px;
   font-weight: 400;
@@ -11559,7 +11559,7 @@ noscript div a:hover {
   box-sizing: border-box;
   font-size: 14px;
   color: rgb(48.5291178683, 44.8928462569, 43.3200652457);
-  border: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border: 1px solid white;
   padding: 6px 10px;
   border-radius: 4px 0 0 4px;
   min-width: 0;
@@ -11576,7 +11576,7 @@ noscript div a:hover {
   outline: 0;
   font-family: inherit;
   background: #ffffff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23FFFFFF'/></svg>") no-repeat right 8px center/auto 16px;
-  border: 1px solid hsl(341.25, 0.0000206391%, 100.0000008607%);
+  border: 1px solid white;
   border-radius: 0 4px 4px 0;
   padding: 6px 10px;
   text-indent: 100%;
@@ -11584,7 +11584,7 @@ noscript div a:hover {
   margin-right: 0;
 }
 .compose-form .compose-form__datetime-wrapper .icon-button.disabled {
-  color: hsl(341.25, 0.0000206391%, 100.0000008607%);
+  color: white;
 }
 
 .react-datepicker__navigation-icon--previous,
@@ -12889,7 +12889,7 @@ a.table-action-link:first-child {
 button.table-action-link:disabled, button.table-action-link:disabled:hover,
 a.table-action-link:disabled,
 a.table-action-link:disabled:hover {
-  color: hsl(356.6866936727, 1604.2750035196%, 99.132529887%);
+  color: rgb(255, 226.3377012053, 228.2292415419);
   cursor: default;
 }
 
@@ -12958,16 +12958,16 @@ a.table-action-link:disabled:hover {
   background: rgb(215.7587608271, 210.9782996317, 208.9217496298);
 }
 .batch-table__row--expired {
-  background: hsl(182.856820367, 1941.5134480658%, 101.94512645%);
+  background: rgb(255, 225.3833312184, 220.9913565422);
 }
 .batch-table__row--expired:hover {
-  background: hsl(182.8005524095, 6592.9829426219%, 100.5709719556%);
+  background: rgb(255, 220.7517982933, 215.9703676372);
 }
 .batch-table__row--expired:nth-child(even) {
-  background: hsl(2.742263885, 4686.5120756657%, 99.1993488665%);
+  background: rgb(255, 216.0603339408, 210.8930396966);
 }
 .batch-table__row--expired:nth-child(even):hover {
-  background: hsl(2.6818424454, 1723.7272108023%, 97.8302553161%);
+  background: rgb(255, 211.3329510275, 205.7934188213);
 }
 .batch-table__row__content {
   padding-top: 12px;
@@ -14757,7 +14757,7 @@ a.column-link {
 
 .compose-form .compose-form__datetime-wrapper .datetime__schedule .datetime-dropdown .datetime-dropdown__input-invalid,
 .compose-form .compose-form__datetime-wrapper .datetime__expire .datetime-dropdown .datetime-dropdown__input-invalid {
-  background-color: hsl(353.3203356128, 163.984865594%, 80.4833791925%);
+  background-color: rgb(255, 141.7510867911, 151.9566513504);
 }
 
 .compose-form .compose-form__datetime-wrapper select,
@@ -14997,7 +14997,7 @@ a.column-link {
   border: 0px solid rgb(206.0241385135, 201.2861303535, 199.247625908);
 }
 .confirmation-modal__passphrase .passphrase__input.invalid {
-  background-color: hsl(353.3203356128, 163.984865594%, 80.4833791925%);
+  background-color: rgb(255, 141.7510867911, 151.9566513504);
 }
 
 .reactions-bar__item:hover:enabled, .reactions-bar__item:focus:enabled, .reactions-bar__item:active:enabled {
@@ -15253,16 +15253,16 @@ a.column-link {
   border-color: rgb(206.0241385135, 201.2861303535, 199.247625908);
 }
 .batch-table__row--expired {
-  background: hsl(1.9735991622, 240.5689434547%, 84.9487947073%);
+  background: rgb(255, 163.9875170272, 156.0820585076);
 }
 .batch-table__row--expired:hover {
-  background: hsl(1.8810779828, 220.0769159701%, 83.6057477891%);
+  background: rgb(255, 158.64242149, 150.6850442902);
 }
 .batch-table__row--expired:nth-child(even) {
-  background: hsl(1.7841675466, 202.712412653%, 82.2650770261%);
+  background: rgb(255, 153.1679937387, 145.2164651533);
 }
 .batch-table__row--expired:nth-child(even):hover {
-  background: hsl(1.6825310261, 187.8092761772%, 80.9267502497%);
+  background: rgb(255, 147.5496020308, 139.6724958799);
 }
 
 .activity-stream {
