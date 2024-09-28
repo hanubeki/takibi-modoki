@@ -20,6 +20,8 @@ html {
 }
 
 .status-card {
+  color: $light-text-color;
+
   .status-card__content {
     background: darken($ui-base-color, 14%);
   }
@@ -897,6 +899,10 @@ a.column-link {
 .status__expiration-time,
 .notification__relative_time {
   color: mix($light-text-color, $dark-text-color, $method: oklab);
+}
+
+.status__content {
+  color: $light-text-color;
 }
 
 .display-name {

@@ -14479,6 +14479,9 @@ html {
   color: #ffffff;
 }
 
+.status-card {
+  color: rgb(96.877486635, 100.1742324759, 97.3632235459);
+}
 .status-card .status-card__content {
   background: rgb(235.713011217, 239.5758953123, 236.2736930274);
 }
@@ -15324,6 +15327,10 @@ a.column-link {
 .status__expiration-time,
 .notification__relative_time {
   color: rgb(125.7309606809, 129.1790021011, 126.2363119235);
+}
+
+.status__content {
+  color: rgb(96.877486635, 100.1742324759, 97.3632235459);
 }
 
 .display-name {
