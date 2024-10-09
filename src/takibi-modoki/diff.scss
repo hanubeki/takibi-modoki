@@ -119,6 +119,10 @@ a.column-link {
   background: darken($ui-base-color, 14%);
 }
 
+.column-header {
+  color: $dark-text-color;
+}
+
 .column-back-button,
 .column-header__back-button,
 .column-header > .column-header__back-button {
@@ -418,10 +422,12 @@ a.column-link {
 // Change the background colors of status__content__spoiler-link
 .reply-indicator__content .status__content__spoiler-link,
 .status__content .status__content__spoiler-link {
-  background: $ui-base-color;
+  background: $ui-base-lighter-color;
+  color: $white;
 
   &:hover {
-    background: lighten($ui-base-color, 4%);
+    background: darken($ui-base-color, 7%);
+    color: $dark-text-color;
   }
 }
 
@@ -933,7 +939,7 @@ a.column-link {
 .status__relative-time,
 .status__expiration-time,
 .notification__relative_time {
-  color: mix($light-text-color, $dark-text-color, $method: oklab);
+  color: $dark-text-color;
 }
 
 .status__content {
@@ -945,7 +951,7 @@ a.column-link {
 }
 
 .display-name__account {
-  color: $dark-text-color;
+  color: mix($dark-text-color, $action-button-color, $method: oklab);
 }
 
 .button.logo-button {

@@ -27,8 +27,8 @@ $ui-highlight-color: color.to-space(color.to-gamut(oklch(70% 40% $takibi-modoki-
 
 $primary-text-color: $black !default;
 $darker-text-color: $classic-base-color !default;
-$dark-text-color: color.to-space(color.to-gamut(oklch(70% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
-$action-button-color: color.to-space(color.to-gamut(oklch(80% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$dark-text-color: color.to-space(color.to-gamut(oklch(60% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$action-button-color: color.to-space(color.to-gamut(oklch(75% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
 
 $inverted-text-color: $black !default;
 $lighter-text-color: $classic-base-color !default;
