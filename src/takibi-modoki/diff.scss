@@ -264,7 +264,7 @@ a.column-link {
   }
 
   &::placeholder {
-    color: $dark-text-color;
+    color: mix($dark-text-color, $action-button-color, $weight: 30%, $method: oklab);
   }
 }
 
@@ -273,9 +273,13 @@ a.column-link {
   border-bottom: 0;
 }
 
+.search__icon .fa {
+  color: $primary-text-color;
+}
+
 .compose-form .compose-form__datetime-wrapper .datetime__schedule .datetime-dropdown .datetime-dropdown__input-invalid,
 .compose-form .compose-form__datetime-wrapper .datetime__expire .datetime-dropdown .datetime-dropdown__input-invalid {
-    background-color: darken($error-value-color, 35%);
+  background-color: darken($error-value-color, 35%);
 }
 
 .compose-form .compose-form__datetime-wrapper select,
@@ -951,7 +955,7 @@ a.column-link {
 }
 
 .display-name__account {
-  color: mix($dark-text-color, $action-button-color, $method: oklab);
+  color: mix($dark-text-color, $action-button-color, $weight: 30%, $method: oklab);
 }
 
 .button.logo-button {
