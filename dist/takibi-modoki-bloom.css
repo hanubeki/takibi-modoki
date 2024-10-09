@@ -3253,7 +3253,7 @@ code {
   border-radius: 4px;
 }
 .activity-stream .entry .status.quote-status {
-  border: solid 1px rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  border: solid 1px rgb(187.0439221025, 190.7458616226, 187.582920329);
   border-radius: 4px;
   padding: 5px;
   margin-top: 15px;
@@ -3522,10 +3522,10 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   background-color: rgb(176.4622753208, 191.4123811284, 133.2472379388);
 }
 .button.button-alternative-2 {
-  background: rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  background: rgb(187.0439221025, 190.7458616226, 187.582920329);
 }
 .button.button-alternative-2:active, .button.button-alternative-2:focus, .button.button-alternative-2:hover {
-  background-color: rgb(196.6070423406, 200.3428617908, 197.1505853652);
+  background-color: rgb(180.7183917501, 184.3972176912, 181.2542960136);
 }
 .button.button-secondary {
   color: rgb(96.877486635, 100.1742324759, 97.3632235459);
@@ -4384,7 +4384,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 
 .quote-status {
-  border: solid 1px rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  border: solid 1px rgb(187.0439221025, 190.7458616226, 187.582920329);
   border-radius: 4px;
   padding: 5px;
   margin-top: 8px;
@@ -4424,7 +4424,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   height: 18px;
 }
 .quote-status .display-name__account {
-  color: rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  color: rgb(187.0439221025, 190.7458616226, 187.582920329);
 }
 .quote-status .display-name {
   padding-left: 20px;
@@ -4438,7 +4438,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 
 .muted .quote-status .display-name {
-  color: rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  color: rgb(187.0439221025, 190.7458616226, 187.582920329);
 }
 
 .status__prepend-icon-wrapper {
@@ -5144,11 +5144,11 @@ a.account__display-name:hover strong {
   opacity: 0.5;
 }
 .muted a.status__content__spoiler-link {
-  background: rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  background: rgb(187.0439221025, 190.7458616226, 187.582920329);
   color: rgb(43.7466001006, 46.6567190948, 44.18456397);
 }
 .muted a.status__content__spoiler-link:hover {
-  background: rgb(191.8143810454, 195.5333761491, 192.3556657726);
+  background: rgb(176.0009785452, 179.6621793191, 176.5345272449);
   text-decoration: none;
 }
 
@@ -7633,7 +7633,7 @@ a.status-card.compact:hover {
   color: rgb(96.877486635, 100.1742324759, 97.3632235459);
   font-size: 18px;
   font-weight: 500;
-  border: 2px dashed rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  border: 2px dashed rgb(187.0439221025, 190.7458616226, 187.582920329);
   border-radius: 4px;
 }
 
@@ -7662,7 +7662,7 @@ a.status-card.compact:hover {
   width: 100%;
   height: 6px;
   border-radius: 6px;
-  background: rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  background: rgb(187.0439221025, 190.7458616226, 187.582920329);
   position: relative;
   margin-top: 5px;
 }
@@ -11732,7 +11732,7 @@ noscript div a:hover {
 }
 
 .modal-layout {
-  background: rgb(212.7390955367, 216.52941573, 213.2899723674) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="%23CBCFCC"/></svg>') repeat-x bottom fixed;
+  background: rgb(212.7390955367, 216.52941573, 213.2899723674) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="%23BBBFBC"/></svg>') repeat-x bottom fixed;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -12371,7 +12371,7 @@ noscript div a:hover {
   width: 100%;
   height: 0;
   border: 0;
-  border-bottom: 1px solid rgba(203.0312700589, 206.7891746257, 203.5777816273, 0.6);
+  border-bottom: 1px solid rgba(187.0439221025, 190.7458616226, 187.582920329, 0.6);
   margin: 20px 0;
 }
 .landing-page hr.spacer {
@@ -13296,7 +13296,7 @@ a.table-action-link:disabled:hover {
   width: 100%;
   height: 0;
   border: 0;
-  border-bottom: 1px solid rgba(203.0312700589, 206.7891746257, 203.5777816273, 0.6);
+  border-bottom: 1px solid rgba(187.0439221025, 190.7458616226, 187.582920329, 0.6);
   margin: 20px 0;
 }
 .admin-wrapper .content hr.spacer {
@@ -14893,13 +14893,13 @@ a.column-link {
 
 .reply-indicator__content .status__content__spoiler-link,
 .status__content .status__content__spoiler-link {
-  background: rgb(203.0312700589, 206.7891746257, 203.5777816273);
+  background: rgb(187.0439221025, 190.7458616226, 187.582920329);
   color: #ffffff;
 }
 .reply-indicator__content .status__content__spoiler-link:hover,
 .status__content .status__content__spoiler-link:hover {
-  background: rgb(224.1706704675, 227.9977880943, 224.7265138999);
-  color: rgb(111.1379226104, 114.5128528984, 111.6337474785);
+  background: rgb(219.257672804, 223.0691503697, 219.8114038485);
+  color: rgb(152.7705176579, 156.3395358035, 153.2918024821);
 }
 
 .media-spoiler,

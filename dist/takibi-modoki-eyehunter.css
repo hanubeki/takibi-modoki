@@ -3253,7 +3253,7 @@ code {
   border-radius: 4px;
 }
 .activity-stream .entry .status.quote-status {
-  border: solid 1px rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  border: solid 1px rgb(191.9578253288, 188.2737498845, 191.4422357076);
   border-radius: 4px;
   padding: 5px;
   margin-top: 15px;
@@ -3522,10 +3522,10 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   background-color: rgb(190.9025799885, 172.2359526389, 227.5768737536);
 }
 .button.button-alternative-2 {
-  background: rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  background: rgb(191.9578253288, 188.2737498845, 191.4422357076);
 }
 .button.button-alternative-2:active, .button.button-alternative-2:focus, .button.button-alternative-2:hover {
-  background-color: rgb(201.5663434149, 197.8479021535, 201.0455751718);
+  background-color: rgb(185.6013168086, 181.9406970333, 185.0892674577);
 }
 .button.button-secondary {
   color: rgb(101.2473301621, 97.9760018887, 100.7948627305);
@@ -4384,7 +4384,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 
 .quote-status {
-  border: solid 1px rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  border: solid 1px rgb(191.9578253288, 188.2737498845, 191.4422357076);
   border-radius: 4px;
   padding: 5px;
   margin-top: 8px;
@@ -4424,7 +4424,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   height: 18px;
 }
 .quote-status .display-name__account {
-  color: rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  color: rgb(191.9578253288, 188.2737498845, 191.4422357076);
 }
 .quote-status .display-name {
   padding-left: 20px;
@@ -4438,7 +4438,7 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 
 .muted .quote-status .display-name {
-  color: rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  color: rgb(191.9578253288, 188.2737498845, 191.4422357076);
 }
 
 .status__prepend-icon-wrapper {
@@ -5144,11 +5144,11 @@ a.account__display-name:hover strong {
   opacity: 0.5;
 }
 .muted a.status__content__spoiler-link {
-  background: rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  background: rgb(191.9578253288, 188.2737498845, 191.4422357076);
   color: rgb(47.5943442828, 44.7215734724, 47.2052233414);
 }
 .muted a.status__content__spoiler-link:hover {
-  background: rgb(196.7511395812, 193.0497616839, 196.2329414127);
+  background: rgb(180.8602774742, 177.2175497126, 180.3509318604);
   text-decoration: none;
 }
 
@@ -7633,7 +7633,7 @@ a.status-card.compact:hover {
   color: rgb(101.2473301621, 97.9760018887, 100.7948627305);
   font-size: 18px;
   font-weight: 500;
-  border: 2px dashed rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  border: 2px dashed rgb(191.9578253288, 188.2737498845, 191.4422357076);
   border-radius: 4px;
 }
 
@@ -7662,7 +7662,7 @@ a.status-card.compact:hover {
   width: 100%;
   height: 6px;
   border-radius: 6px;
-  background: rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  background: rgb(191.9578253288, 188.2737498845, 191.4422357076);
   position: relative;
   margin-top: 5px;
 }
@@ -11732,7 +11732,7 @@ noscript div a:hover {
 }
 
 .modal-layout {
-  background: rgb(217.7714018294, 213.9977150477, 217.2423284726) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="%23D0CCCF"/></svg>') repeat-x bottom fixed;
+  background: rgb(217.7714018294, 213.9977150477, 217.2423284726) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="%23C0BCBF"/></svg>') repeat-x bottom fixed;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -12371,7 +12371,7 @@ noscript div a:hover {
   width: 100%;
   height: 0;
   border: 0;
-  border-bottom: 1px solid rgba(208.0201581859, 204.2793246694, 207.4960208057, 0.6);
+  border-bottom: 1px solid rgba(191.9578253288, 188.2737498845, 191.4422357076, 0.6);
   margin: 20px 0;
 }
 .landing-page hr.spacer {
@@ -13296,7 +13296,7 @@ a.table-action-link:disabled:hover {
   width: 100%;
   height: 0;
   border: 0;
-  border-bottom: 1px solid rgba(208.0201581859, 204.2793246694, 207.4960208057, 0.6);
+  border-bottom: 1px solid rgba(191.9578253288, 188.2737498845, 191.4422357076, 0.6);
   margin: 20px 0;
 }
 .admin-wrapper .content hr.spacer {
@@ -14893,13 +14893,13 @@ a.column-link {
 
 .reply-indicator__content .status__content__spoiler-link,
 .status__content .status__content__spoiler-link {
-  background: rgb(208.0201581859, 204.2793246694, 207.4960208057);
+  background: rgb(191.9578253288, 188.2737498845, 191.4422357076);
   color: #ffffff;
 }
 .reply-indicator__content .status__content__spoiler-link:hover,
 .status__content .status__content__spoiler-link:hover {
-  background: rgb(229.2522522507, 225.4412894473, 228.7175883073);
-  color: rgb(115.612935792, 112.2616667539, 115.1480869447);
+  background: rgb(224.318312453, 220.523190817, 223.7860230828);
+  color: rgb(157.5061901369, 153.9571306078, 157.0110472029);
 }
 
 .media-spoiler,

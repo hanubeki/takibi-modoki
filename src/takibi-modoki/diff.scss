@@ -430,8 +430,8 @@ a.column-link {
   color: $white;
 
   &:hover {
-    background: darken($ui-base-color, 7%);
-    color: $dark-text-color;
+    background: darken($ui-base-color, 4%);
+    color: mix($dark-text-color, $action-button-color, $weight: 30%, $method: oklab);
   }
 }
 

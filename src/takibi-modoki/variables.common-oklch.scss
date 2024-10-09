@@ -20,7 +20,7 @@ $base-overlay-background: $white !default;
 $valid-value-color: $success-green !default;
 
 $ui-base-color: $classic-secondary-color !default;
-$ui-base-lighter-color: color.to-space(color.to-gamut(oklch(85% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
+$ui-base-lighter-color: color.to-space(color.to-gamut(oklch(80% $takibi-modoki-base-sat $takibi-modoki-base-hue), srgb, local-minde), rgb);
 $ui-primary-color: color.to-space(color.to-gamut(oklch(80% 20% $takibi-modoki-highlight-hue), srgb, local-minde), rgb);
 $ui-secondary-color: $classic-base-color !default;
 $ui-highlight-color: color.to-space(color.to-gamut(oklch(70% 40% $takibi-modoki-highlight-hue), srgb, local-minde), rgb);
