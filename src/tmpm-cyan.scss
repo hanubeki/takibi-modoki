@@ -1,0 +1,14 @@
+/* Theme: takibi-modoki-plus-modern (シアン) */
+@import 'takibi-modoki/variables.cyan';
+@import 'takibi-modoki/variables.common-oklch';
+@import 'application';
+@import 'modern/style';
+@import 'takibi-modoki/diff';
+@import 'modern/fedibird';
+@import 'modern/fedibird-modern-tweaks';
+@import 'modern/fedibird-fix';
+
+.layout-multiple-columns .column {
+	flex-grow: 1;
+	max-width: 500px;
+}
