@@ -453,22 +453,8 @@ a.column-link {
 .dropdown-menu {
   background: darken($ui-base-color, 14%);
 
-  &__arrow {
-    &.left {
-      border-left-color: darken($ui-base-color, 14%);
-    }
-
-    &.top {
-      border-top-color: darken($ui-base-color, 14%);
-    }
-
-    &.bottom {
-      border-bottom-color: darken($ui-base-color, 14%);
-    }
-
-    &.right {
-      border-right-color: darken($ui-base-color, 14%);
-    }
+  &__arrow::before {
+    background-color: darken($ui-base-color, 14%);
   }
 
   &__item {
@@ -487,24 +473,6 @@ a.column-link {
 .account-popup {
   &.dropdown-menu {
     background: darken($ui-base-color, 14%);
-  }
-
-  &__arrow.dropdown-menu__arrow {
-    &.left {
-      border-left-color: darken($ui-base-color, 14%);
-    }
-  
-    &.top {
-      border-top-color: darken($ui-base-color, 14%);
-    }
-  
-    &.bottom {
-      border-bottom-color: darken($ui-base-color, 14%);
-    }
-  
-    &.right {
-      border-right-color: darken($ui-base-color, 14%);
-    }
   }
 
   &__display-name__html {

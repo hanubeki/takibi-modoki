@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Theme: takibi-modoki-plus-modern (バイオレット) */
 @font-face {
   font-family: "mastodon-font-sans-serif";
   src: local("Roboto Italic"), url("../fonts/roboto/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto/roboto-italic-webfont.woff") format("woff"), url("../fonts/roboto/roboto-italic-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-italic-webfont.svg#roboto-italic-webfont") format("svg");
@@ -1152,6 +1153,29 @@ article .__ns__pop2top {
   .public-layout .card-grid > div .card__bar:hover, .public-layout .card-grid > div .card__bar:active, .public-layout .card-grid > div .card__bar:focus {
     background: rgb(211.261257643, 207.5093690698, 210.7354292344);
   }
+}
+
+.emoji-detail h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+}
+.emoji-detail h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.emoji-table-wrapper .table th {
+  text-align: end;
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  width: 1%;
+}
+.emoji-table-wrapper .table td {
+  word-break: break-all;
+}
+.emoji-table-wrapper .table td .generated {
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
 }
 
 .no-list {
@@ -2608,6 +2632,36 @@ code {
   }
 }
 
+.oauth-prompt h3 {
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.oauth-prompt p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.oauth-prompt .permissions-list {
+  border: 1px solid rgb(217.77140823, 213.9977132428, 217.2423036333);
+  border-radius: 4px;
+  background: rgb(224.3183190414, 220.5231889588, 223.7859975331);
+  margin-bottom: 30px;
+}
+.oauth-prompt .actions {
+  margin: 0 -10px;
+  display: flex;
+}
+.oauth-prompt .actions form {
+  box-sizing: border-box;
+  padding: 0 10px;
+  flex: 1 1 auto;
+  min-height: 1px;
+  width: 50%;
+}
+
 .qr-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -2864,6 +2918,65 @@ code {
   display: none;
 }
 
+.simple_form .h-captcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.permissions-list__item {
+  padding: 15px;
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  border-bottom: 1px solid rgb(211.261257643, 207.5093690698, 210.7354292344);
+  display: flex;
+  align-items: center;
+}
+.permissions-list__item__text {
+  flex: 1 1 auto;
+}
+.permissions-list__item__text__title {
+  font-weight: 500;
+}
+.permissions-list__item__text__type {
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  word-break: break-word;
+}
+.permissions-list__item__icon {
+  flex: 0 0 auto;
+  font-size: 18px;
+  width: 30px;
+  color: rgb(73.8305084746, 143.9694915254, 94.7491525424);
+  display: flex;
+  align-items: center;
+}
+.permissions-list__item:last-child {
+  border-bottom: 0;
+}
+
+.applications-list .permissions-list__item:last-child {
+  padding-bottom: 0;
+}
+
+.keywords-table thead th {
+  white-space: nowrap;
+}
+.keywords-table thead th:first-child {
+  width: 100%;
+}
+.keywords-table tfoot td {
+  border: 0;
+}
+.keywords-table .input.string {
+  margin-bottom: 0;
+}
+.keywords-table .label_input__wrapper {
+  margin-top: 10px;
+}
+.keywords-table .table-action-link {
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
 .card > a {
   display: block;
   text-decoration: none;
@@ -3046,6 +3159,8 @@ code {
 .account-role,
 .fedibird_features,
 .beta_features,
+.keyword-badge,
+.category-badge,
 .simple_form .fedibird_features,
 .simple_form .beta_features,
 .simple_form .recommended {
@@ -3065,6 +3180,10 @@ code {
 .fedibird_features.moderator,
 .beta_features.allow,
 .beta_features.moderator,
+.keyword-badge.allow,
+.keyword-badge.moderator,
+.category-badge.allow,
+.category-badge.moderator,
 .simple_form .fedibird_features.allow,
 .simple_form .fedibird_features.moderator,
 .simple_form .beta_features.allow,
@@ -3080,6 +3199,10 @@ code {
 .fedibird_features.admin,
 .beta_features.deny,
 .beta_features.admin,
+.keyword-badge.deny,
+.keyword-badge.admin,
+.category-badge.deny,
+.category-badge.admin,
 .simple_form .fedibird_features.deny,
 .simple_form .fedibird_features.admin,
 .simple_form .beta_features.deny,
@@ -3093,6 +3216,8 @@ code {
 .account-role.conditional,
 .fedibird_features.conditional,
 .beta_features.conditional,
+.keyword-badge.conditional,
+.category-badge.conditional,
 .simple_form .fedibird_features.conditional,
 .simple_form .beta_features.conditional,
 .simple_form .recommended.conditional {
@@ -3103,6 +3228,8 @@ code {
 .account-role.float,
 .fedibird_features.float,
 .beta_features.float,
+.keyword-badge.float,
+.category-badge.float,
 .simple_form .fedibird_features.float,
 .simple_form .beta_features.float,
 .simple_form .recommended.float {
@@ -3685,8 +3812,8 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   outline: 0 !important;
 }
 
-.dropdown-menu {
-  position: absolute;
+body > [data-popper-placement] {
+  z-index: 3;
 }
 
 .invisible {
@@ -3778,11 +3905,6 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 .compose-form .compose-form__warning a:hover, .compose-form .compose-form__warning a:active, .compose-form .compose-form__warning a:focus {
   text-decoration: none;
-}
-.compose-form .emoji-picker-dropdown {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 .compose-form .compose-form__autosuggest-wrapper {
   position: relative;
@@ -3890,6 +4012,12 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   justify-content: flex-start;
   line-height: 18px;
   font-size: 14px;
+}
+.compose-form .autosuggest-account .emojione,
+.compose-form .autosuggest-emoji .emojione,
+.compose-form .autosuggest-hashtag .emojione {
+  width: calc(var(--picker-emoji-size, 22px));
+  height: calc(var(--picker-emoji-size, 22px));
 }
 .compose-form .autosuggest-hashtag {
   justify-content: space-between;
@@ -4073,6 +4201,9 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 }
 .emojione img {
   width: auto;
+}
+.emojione.clickable {
+  cursor: pointer;
 }
 
 .reply-indicator {
@@ -4377,6 +4508,18 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
   width: 100%;
   clear: both;
   border-bottom: 1px solid rgb(204.7885004665, 201.0588049779, 204.2660101162);
+}
+.status__wrapper--filtered__button {
+  display: inline;
+  color: rgb(162.1230713782, 119.9251997329, 228.4025183229);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+.status__wrapper--filtered__button:hover, .status__wrapper--filtered__button:active {
+  text-decoration: underline;
 }
 
 .quote-inline {
@@ -4842,18 +4985,6 @@ button.icon-button.disabled i.fa-retweet, button.icon-button.disabled:hover i.fa
 .account-popup.dropdown-menu {
   background: #ffffff;
 }
-.account-popup__arrow.dropdown-menu__arrow.left {
-  border-left-color: #ffffff;
-}
-.account-popup__arrow.dropdown-menu__arrow.top {
-  border-top-color: #ffffff;
-}
-.account-popup__arrow.dropdown-menu__arrow.bottom {
-  border-bottom-color: #ffffff;
-}
-.account-popup__arrow.dropdown-menu__arrow.right {
-  border-right-color: #ffffff;
-}
 .account-popup__wapper {
   padding: 2px 6px;
   white-space: nowrap;
@@ -5170,6 +5301,28 @@ a.account__display-name:hover strong {
   text-overflow: ellipsis;
 }
 
+.notification__avatar-wrapper {
+  left: -58px;
+  position: absolute;
+}
+
+.notification-followed-message {
+  border-bottom: 1px solid rgb(204.7885004665, 201.0588049779, 204.2660101162);
+  padding-bottom: 6px;
+}
+
+.notification__followed_message {
+  color: rgb(47.5943458329, 44.7215730429, 47.2052169306);
+  border: solid 1px rgb(73.8305084746, 143.9694915254, 94.7491525424);
+  border-radius: 6px;
+  background: color-mix(in srgb, rgb(73.8305084746, 143.9694915254, 94.7491525424), transparent 90%);
+  padding: 6px 8px;
+}
+.notification__followed_message a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .notification__favourite-icon-wrapper,
 .notification__reaction-icon-wrapper {
   left: -26px;
@@ -5337,6 +5490,35 @@ a.account__display-name:hover strong {
   text-decoration: none;
 }
 
+.dropdown-animation {
+  animation: dropdown 300ms cubic-bezier(0.1, 0.7, 0.1, 1);
+}
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: scaleX(0.85) scaleY(0.75);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+}
+.dropdown-animation.top {
+  transform-origin: bottom;
+}
+.dropdown-animation.right {
+  transform-origin: left;
+}
+.dropdown-animation.bottom {
+  transform-origin: top;
+}
+.dropdown-animation.left {
+  transform-origin: right;
+}
+.reduce-motion .dropdown-animation {
+  animation: none;
+}
+
 .dropdown {
   display: inline-block;
 }
@@ -5352,58 +5534,66 @@ a.account__display-name:hover strong {
   height: 0;
 }
 
-.dropdown-menu {
+.dropdown-menu,
+.emoji-picker-dropdown__menu {
   background: rgb(101.2473332309, 97.9760010282, 100.7948505226);
   padding: 4px 0;
   border-radius: 4px;
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
   z-index: 9999;
 }
-.dropdown-menu ul {
+.dropdown-menu ul,
+.emoji-picker-dropdown__menu ul {
   list-style: none;
 }
-.dropdown-menu.left {
+.dropdown-menu.left,
+.emoji-picker-dropdown__menu.left {
   transform-origin: 100% 50%;
 }
-.dropdown-menu.top {
+.dropdown-menu.top,
+.emoji-picker-dropdown__menu.top {
   transform-origin: 50% 100%;
 }
-.dropdown-menu.bottom {
+.dropdown-menu.bottom,
+.emoji-picker-dropdown__menu.bottom {
   transform-origin: 50% 0;
 }
-.dropdown-menu.right {
+.dropdown-menu.right,
+.emoji-picker-dropdown__menu.right {
   transform-origin: 0 50%;
 }
 
 .dropdown-menu__arrow {
   position: absolute;
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
 }
-.dropdown-menu__arrow.left {
-  right: -5px;
-  margin-top: -5px;
-  border-width: 5px 0 5px 5px;
-  border-left-color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+.dropdown-menu__arrow::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 5px;
+  background-color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  mask-image: url("data:image/svg+xml;utf8,<svg width='14' height='5' xmlns='http://www.w3.org/2000/svg'><path d='M7 0L0 5h14L7 0z' fill='white'/></svg>");
 }
 .dropdown-menu__arrow.top {
   bottom: -5px;
-  margin-left: -7px;
-  border-width: 5px 7px 0;
-  border-top-color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+}
+.dropdown-menu__arrow.top::before {
+  transform: rotate(180deg);
+}
+.dropdown-menu__arrow.right {
+  left: -9px;
+}
+.dropdown-menu__arrow.right::before {
+  transform: rotate(-90deg);
 }
 .dropdown-menu__arrow.bottom {
   top: -5px;
-  margin-left: -7px;
-  border-width: 0 7px 5px;
-  border-bottom-color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
 }
-.dropdown-menu__arrow.right {
-  left: -5px;
-  margin-top: -5px;
-  border-width: 5px 5px 5px 0;
-  border-right-color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+.dropdown-menu__arrow.left {
+  right: -9px;
+}
+.dropdown-menu__arrow.left::before {
+  transform: rotate(90deg);
 }
 
 .dropdown-menu__item a {
@@ -7536,12 +7726,11 @@ a.status-card.compact:hover {
 }
 
 .emoji-picker-dropdown__menu {
+  max-height: 80vh;
+  max-width: 80vw;
   background: #ffffff;
-  position: absolute;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-  margin-top: 5px;
-  z-index: 2;
+  padding: 0 0 4px 0;
+  position: relative;
 }
 .emoji-picker-dropdown__menu .emoji-mart-scroll {
   transition: opacity 200ms ease;
@@ -7678,7 +7867,6 @@ a.status-card.compact:hover {
 
 .emoji-button {
   display: block;
-  padding: 5px 5px 2px 2px;
   outline: 0;
   cursor: pointer;
 }
@@ -7704,7 +7892,6 @@ a.status-card.compact:hover {
 }
 
 .privacy-dropdown__dropdown {
-  position: absolute;
   background: #ffffff;
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -7973,7 +8160,6 @@ a.status-card.compact:hover {
 .modal-root__modal {
   pointer-events: auto;
   display: flex;
-  z-index: 9999;
 }
 
 .video-modal__container {
@@ -8666,6 +8852,13 @@ a.status-card.compact:hover {
   padding: 30px;
   font-size: 16px;
 }
+.confirmation-modal__container h1,
+.mute-modal__container h1,
+.block-modal__container h1,
+.report-modal__target h1 {
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
 .confirmation-modal__container strong,
 .mute-modal__container strong,
 .block-modal__container strong,
@@ -8832,6 +9025,62 @@ a.status-card.compact:hover {
 
 .media-gallery__gifv:hover .media-gallery__gifv__label {
   opacity: 1;
+}
+
+.media-gallery__item__badges {
+  position: absolute;
+  bottom: 8px;
+  inset-inline-end: 8px;
+  display: flex;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.media-gallery__alt__label {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px) saturate(180%) contrast(75%) brightness(70%);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 1;
+  line-height: 20px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.media-gallery__alt__label--non-interactive {
+  pointer-events: none;
+}
+
+.media-gallery__alt__popover {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px) saturate(180%) contrast(75%) brightness(70%);
+  border-radius: 4px;
+  box-shadow: var(--dropdown-shadow);
+  padding: 16px;
+  min-width: 16em;
+  min-height: 2em;
+  max-width: 22em;
+  max-height: 30em;
+  overflow-y: auto;
+  word-break: break-all;
+}
+.media-gallery__alt__popover h4 {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.media-gallery__alt__popover p {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: pre-line;
 }
 
 .attachment-list {
@@ -10314,6 +10563,7 @@ noscript div a:hover {
 }
 
 .account__header__content,
+.account__header__followed_message,
 .server__header__content {
   color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
   font-size: 14px;
@@ -10323,19 +10573,23 @@ noscript div a:hover {
   word-wrap: break-word;
 }
 .account__header__content p,
+.account__header__followed_message p,
 .server__header__content p {
   margin-bottom: 20px;
 }
 .account__header__content p:last-child,
+.account__header__followed_message p:last-child,
 .server__header__content p:last-child {
   margin-bottom: 0;
 }
 .account__header__content a,
+.account__header__followed_message a,
 .server__header__content a {
   color: inherit;
   text-decoration: underline;
 }
 .account__header__content a:hover,
+.account__header__followed_message a:hover,
 .server__header__content a:hover {
   text-decoration: none;
 }
@@ -10454,6 +10708,21 @@ noscript div a:hover {
 .columns-area--mobile .account__header__bio .account__header__content {
   padding-left: 20px;
   padding-right: 20px;
+}
+.account__header__bio .account__header__followed_message {
+  margin: 10px;
+  color: rgb(47.5943458329, 44.7215730429, 47.2052169306);
+  border: solid 1px rgb(73.8305084746, 143.9694915254, 94.7491525424);
+  border-radius: 6px;
+  background: color-mix(in srgb, rgb(73.8305084746, 143.9694915254, 94.7491525424), transparent 90%);
+  padding: 6px 8px;
+}
+.account__header__bio .account__header__followed_message_header {
+  display: block;
+  font-size: 12px;
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 .account__header__bio .account__header__joined {
   font-size: 14px;
@@ -11260,6 +11529,134 @@ noscript div a:hover {
   transform: translateY(-50%);
   z-index: 1;
   pointer-events: none;
+}
+
+.custom-emoji__result,
+.custom-emoji__detail {
+  border-bottom: 1px solid rgb(204.7885004665, 201.0588049779, 204.2660101162);
+  padding: 6px;
+}
+.custom-emoji__result .custom-emoji__summary_wrapper,
+.custom-emoji__detail .custom-emoji__summary_wrapper {
+  margin: 4px 0;
+  color: rgb(47.5943458329, 44.7215730429, 47.2052169306);
+  border: solid 1px rgb(73.8305084746, 143.9694915254, 94.7491525424);
+  border-radius: 6px;
+  background: color-mix(in srgb, rgb(73.8305084746, 143.9694915254, 94.7491525424), transparent 90%);
+  padding: 6px 8px;
+}
+.custom-emoji__result .custom-emoji__property,
+.custom-emoji__detail .custom-emoji__property {
+  border-top: 1px solid rgb(204.7885004665, 201.0588049779, 204.2660101162);
+}
+.custom-emoji__result .custom-emoji__label,
+.custom-emoji__detail .custom-emoji__label {
+  display: block;
+  font-size: 12px;
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  font-weight: 500;
+  padding: 4px 0;
+}
+.custom-emoji__result .custom-emoji__shortcode,
+.custom-emoji__result .custom-emoji__dimension,
+.custom-emoji__result .custom-emoji__domain,
+.custom-emoji__result .custom-emoji__alternate_name,
+.custom-emoji__result .custom-emoji__ruby,
+.custom-emoji__result .custom-emoji__category,
+.custom-emoji__result .custom-emoji__creator,
+.custom-emoji__result .custom-emoji__license,
+.custom-emoji__result .custom-emoji__misskey_license,
+.custom-emoji__result .custom-emoji__copy_permission,
+.custom-emoji__result .custom-emoji__keyword,
+.custom-emoji__result .custom-emoji__related_link,
+.custom-emoji__result .custom-emoji__date,
+.custom-emoji__result .custom-emoji__copyright_notice,
+.custom-emoji__result .custom-emoji__credit_text,
+.custom-emoji__result .custom-emoji__usage_info,
+.custom-emoji__result .custom-emoji__is_based_on,
+.custom-emoji__result .custom-emoji__sensitive,
+.custom-emoji__result .custom-emoji__description,
+.custom-emoji__result .custom-emoji__summary,
+.custom-emoji__detail .custom-emoji__shortcode,
+.custom-emoji__detail .custom-emoji__dimension,
+.custom-emoji__detail .custom-emoji__domain,
+.custom-emoji__detail .custom-emoji__alternate_name,
+.custom-emoji__detail .custom-emoji__ruby,
+.custom-emoji__detail .custom-emoji__category,
+.custom-emoji__detail .custom-emoji__creator,
+.custom-emoji__detail .custom-emoji__license,
+.custom-emoji__detail .custom-emoji__misskey_license,
+.custom-emoji__detail .custom-emoji__copy_permission,
+.custom-emoji__detail .custom-emoji__keyword,
+.custom-emoji__detail .custom-emoji__related_link,
+.custom-emoji__detail .custom-emoji__date,
+.custom-emoji__detail .custom-emoji__copyright_notice,
+.custom-emoji__detail .custom-emoji__credit_text,
+.custom-emoji__detail .custom-emoji__usage_info,
+.custom-emoji__detail .custom-emoji__is_based_on,
+.custom-emoji__detail .custom-emoji__sensitive,
+.custom-emoji__detail .custom-emoji__description,
+.custom-emoji__detail .custom-emoji__summary {
+  color: rgb(47.5943458329, 44.7215730429, 47.2052169306);
+  word-break: break-all;
+  padding: 2px 4px;
+  margin: 4px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.custom-emoji__result .custom-emoji__shortcode a,
+.custom-emoji__result .custom-emoji__dimension a,
+.custom-emoji__result .custom-emoji__domain a,
+.custom-emoji__result .custom-emoji__alternate_name a,
+.custom-emoji__result .custom-emoji__ruby a,
+.custom-emoji__result .custom-emoji__category a,
+.custom-emoji__result .custom-emoji__creator a,
+.custom-emoji__result .custom-emoji__license a,
+.custom-emoji__result .custom-emoji__misskey_license a,
+.custom-emoji__result .custom-emoji__copy_permission a,
+.custom-emoji__result .custom-emoji__keyword a,
+.custom-emoji__result .custom-emoji__related_link a,
+.custom-emoji__result .custom-emoji__date a,
+.custom-emoji__result .custom-emoji__copyright_notice a,
+.custom-emoji__result .custom-emoji__credit_text a,
+.custom-emoji__result .custom-emoji__usage_info a,
+.custom-emoji__result .custom-emoji__is_based_on a,
+.custom-emoji__result .custom-emoji__sensitive a,
+.custom-emoji__result .custom-emoji__description a,
+.custom-emoji__result .custom-emoji__summary a,
+.custom-emoji__detail .custom-emoji__shortcode a,
+.custom-emoji__detail .custom-emoji__dimension a,
+.custom-emoji__detail .custom-emoji__domain a,
+.custom-emoji__detail .custom-emoji__alternate_name a,
+.custom-emoji__detail .custom-emoji__ruby a,
+.custom-emoji__detail .custom-emoji__category a,
+.custom-emoji__detail .custom-emoji__creator a,
+.custom-emoji__detail .custom-emoji__license a,
+.custom-emoji__detail .custom-emoji__misskey_license a,
+.custom-emoji__detail .custom-emoji__copy_permission a,
+.custom-emoji__detail .custom-emoji__keyword a,
+.custom-emoji__detail .custom-emoji__related_link a,
+.custom-emoji__detail .custom-emoji__date a,
+.custom-emoji__detail .custom-emoji__copyright_notice a,
+.custom-emoji__detail .custom-emoji__credit_text a,
+.custom-emoji__detail .custom-emoji__usage_info a,
+.custom-emoji__detail .custom-emoji__is_based_on a,
+.custom-emoji__detail .custom-emoji__sensitive a,
+.custom-emoji__detail .custom-emoji__description a,
+.custom-emoji__detail .custom-emoji__summary a {
+  color: inherit;
+}
+.custom-emoji__result .custom-emoji__domain_part,
+.custom-emoji__detail .custom-emoji__domain_part {
+  float: right;
+  font-size: 12px;
+}
+.custom-emoji__result .custom-emoji__image img.emojione:not(.reaction),
+.custom-emoji__detail .custom-emoji__image img.emojione:not(.reaction) {
+  box-sizing: border-box;
+  height: 96px;
+  max-width: min(100%, 30em);
+  padding: 10px;
 }
 
 .poll {
@@ -12928,6 +13325,46 @@ a.table-action-link:disabled:hover {
   text-align: right;
   padding-right: 11px;
 }
+.batch-table__select-all {
+  background: var(--background-color);
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--background-border-color);
+  border-top: 0;
+  color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
+  display: none;
+}
+.batch-table__select-all.active {
+  display: flex;
+}
+.batch-table__select-all .selected,
+.batch-table__select-all .not-selected {
+  display: none;
+}
+.batch-table__select-all .selected.active,
+.batch-table__select-all .not-selected.active {
+  display: block;
+}
+.batch-table__select-all strong {
+  font-weight: 700;
+}
+.batch-table__select-all span {
+  padding: 8px;
+  display: inline-block;
+}
+.batch-table__select-all button {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  color: rgb(174.4486283372, 132.3560467018, 242.0456279051);
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 8px;
+}
+.batch-table__select-all button:hover, .batch-table__select-all button:focus, .batch-table__select-all button:active {
+  background: rgb(204.7885004665, 201.0588049779, 204.2660101162);
+}
 .batch-table__form {
   padding: 16px;
   border: 1px solid rgb(230.9013813478, 227.0851730721, 230.365899776);
@@ -13822,16 +14259,28 @@ a.name-tag.suspended .avatar,
   text-align: center;
 }
 
-.announcements-list {
+.applications-list__item,
+.filters-list__item {
+  padding: 15px 0;
+  background: rgb(217.77140823, 213.9977132428, 217.2423036333);
+  border: 1px solid rgb(211.261257643, 207.5093690698, 210.7354292344);
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.announcements-list,
+.filters-list {
   border: 1px solid rgb(211.261257643, 207.5093690698, 210.7354292344);
   border-radius: 4px;
 }
-.announcements-list__item {
+.announcements-list__item,
+.filters-list__item {
   padding: 15px 0;
   background: rgb(217.77140823, 213.9977132428, 217.2423036333);
   border-bottom: 1px solid rgb(211.261257643, 207.5093690698, 210.7354292344);
 }
-.announcements-list__item__title {
+.announcements-list__item__title,
+.filters-list__item__title {
   padding: 0 15px;
   display: block;
   font-weight: 500;
@@ -13841,20 +14290,45 @@ a.name-tag.suspended .avatar,
   text-decoration: none;
   margin-bottom: 10px;
 }
-.announcements-list__item__title:hover, .announcements-list__item__title:focus, .announcements-list__item__title:active {
+.announcements-list__item__title:hover, .announcements-list__item__title:focus, .announcements-list__item__title:active,
+.filters-list__item__title:hover,
+.filters-list__item__title:focus,
+.filters-list__item__title:active {
   color: rgb(47.5943458329, 44.7215730429, 47.2052169306);
 }
-.announcements-list__item__meta {
+.announcements-list__item__meta,
+.filters-list__item__meta {
   padding: 0 15px;
   color: rgb(115.6129392699, 112.2616657774, 115.1480731815);
 }
-.announcements-list__item__action-bar {
+.announcements-list__item__action-bar,
+.filters-list__item__action-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.announcements-list__item:last-child {
+.announcements-list__item:last-child,
+.filters-list__item:last-child {
   border-bottom: 0;
+}
+
+.filters-list__item__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.filters-list__item__permissions {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.filters-list__item .expiration {
+  font-size: 13px;
+}
+.filters-list__item.expired .expiration {
+  color: rgb(201.4579226992, 40.5203943691, 73.0638323054);
+}
+.filters-list__item.expired .permissions-list__item__icon {
+  color: rgb(115.6129392699, 112.2616657774, 115.1480731815);
 }
 
 .account-badges {
@@ -13873,10 +14347,11 @@ a.name-tag.suspended .avatar,
   color: #9baec8;
 }
 
-.emoji-detail .emojione {
+.emoji-detail img.emojione:not(.reaction) {
   max-width: 640px;
   width: auto;
   height: 64px;
+  max-width: min(100%, 30em);
 }
 
 .edit_custom_emoji.simple_form .actions {
@@ -13998,6 +14473,10 @@ body.rtl .notification__message {
 body.rtl .announcements__mastodon,
 body.rtl .drawer__inner__mastodon > img {
   transform: scaleX(-1);
+}
+body.rtl .notification__avatar-wrapper {
+  left: auto;
+  right: -58px;
 }
 body.rtl .notification__favourite-icon-wrapper {
   left: auto;
@@ -14464,6 +14943,1159 @@ body.rtl .simple_form .beta_features.float {
   color: rgb(47.5943458329, 44.7215730429, 47.2052169306);
 }
 
+:root {
+  --tl-width: 750px;
+  --radius: 12px;
+  --radius-round: 24px;
+  --hover-color: rgba(170,170,170,0.07);
+  --border-color: rgba(120,120,120,0.2);
+  --shadow: 0 10px 40px -10px rgba(0,0,0,0.15);
+  --shadow-low: 0 8px 16px -10px rgba(0,0,0,0.4);
+}
+
+#mastodon button,
+.public-layout button,
+#mastodon video,
+.public-layout video,
+#mastodon input,
+.public-layout input,
+#mastodon iframe,
+.public-layout iframe,
+#mastodon .privacy-dropdown__dropdown,
+.public-layout .privacy-dropdown__dropdown,
+#mastodon .react-toggle-track,
+.public-layout .react-toggle-track {
+  border-radius: var(--radius) !important;
+}
+
+#mastodon *,
+.public-layout * {
+  border-color: var(--border-color) !important;
+  font-display: swap !important;
+}
+
+#mastodon .media-gallery__item,
+.public-layout .media-gallery__item,
+#mastodon .column-link,
+.public-layout .column-link,
+#mastodon select,
+.public-layout select {
+  transition: transform 0.4s cubic-bezier(0, 0, 0, 3) !important;
+}
+
+#mastodon .media-gallery__item:active,
+.public-layout .media-gallery__item:active,
+#mastodon .column-link:active,
+.public-layout .column-link:active,
+#mastodon select:active,
+.public-layout select:active {
+  transform: scale(0.99);
+  transition: transform 0.4s cubic-bezier(0, 0, 0, 1) !important;
+}
+
+#mastodon .react-toggle-track,
+.public-layout .react-toggle-track,
+#mastodon .button,
+.public-layout .button,
+#mastodon .icon-button,
+.public-layout .icon-button {
+  transition: transform 0.4s cubic-bezier(0, 0, 0, 4) !important;
+}
+
+#mastodon .react-toggle-track:active,
+.public-layout .react-toggle-track:active,
+#mastodon .button:active,
+.public-layout .button:active,
+#mastodon .icon-button:active,
+.public-layout .icon-button:active {
+  transform: scale(0.95);
+  transition: transform 0.4s cubic-bezier(0, 0, 0, 1) !important;
+}
+
+#mastodon .react-toggle-thumb,
+.public-layout .react-toggle-thumb {
+  pointer-events: none;
+}
+
+#mastodon .account__avatar,
+.public-layout .account__avatar {
+  border-radius: 30%;
+}
+
+#mastodon .detailed-status__action-bar,
+.public-layout .detailed-status__action-bar,
+#mastodon .column-header__collapsible-inner,
+.public-layout .column-header__collapsible-inner,
+#mastodon .compose-form__buttons-wrapper,
+.public-layout .compose-form__buttons-wrapper,
+#mastodon .audio-player,
+.public-layout .audio-player,
+#mastodon .box-widget input[type=email],
+.public-layout .box-widget input[type=email],
+#mastodon .box-widget input[type=password],
+.public-layout .box-widget input[type=password],
+#mastodon .box-widget input[type=text],
+.public-layout .box-widget input[type=text],
+#mastodon .box-widget textarea,
+.public-layout .box-widget textarea,
+#mastodon .compose-form .spoiler-input__input,
+.public-layout .compose-form .spoiler-input__input,
+#mastodon .compose-form__autosuggest-wrapper,
+.public-layout .compose-form__autosuggest-wrapper,
+#mastodon .compose-form__poll-wrapper select,
+.public-layout .compose-form__poll-wrapper select,
+#mastodon .poll__option input[type=text],
+.public-layout .poll__option input[type=text],
+#mastodon .report-dialog-modal__textarea,
+.public-layout .report-dialog-modal__textarea,
+#mastodon .search__input,
+.public-layout .search__input,
+#mastodon .setting-text,
+.public-layout .setting-text,
+#mastodon .statuses-grid .detailed-status,
+.public-layout .statuses-grid .detailed-status {
+  border: 0 !important;
+}
+
+#mastodon .columns-area__panels__pane__inner,
+.public-layout .columns-area__panels__pane__inner {
+  margin-top: 30px;
+}
+
+#mastodon .compose-panel,
+.public-layout .compose-panel {
+  margin-top: 0;
+}
+
+#mastodon .search,
+.public-layout .search,
+.search-popout {
+  margin-inline: 5px;
+  border-radius: var(--radius);
+}
+
+#mastodon .search label,
+.public-layout .search label {
+  box-sizing: border-box;
+}
+
+#mastodon .search input,
+.public-layout .search input {
+  border-radius: var(--radius-round) !important;
+  padding-left: 20px;
+}
+
+#mastodon .search .search__icon > i,
+.public-layout .search .search__icon > i {
+  right: 15px;
+}
+
+#mastodon .compose-form .compose-form__autosuggest-wrapper,
+.public-layout .compose-form .compose-form__autosuggest-wrapper,
+#mastodon .compose-form .autosuggest-textarea__textarea,
+.public-layout .compose-form .autosuggest-textarea__textarea {
+  border-radius: var(--radius) var(--radius) 0 0 !important;
+}
+
+#mastodon .compose-form .compose-form__buttons-wrapper,
+.public-layout .compose-form .compose-form__buttons-wrapper {
+  border-radius: 0 0 var(--radius) var(--radius) !important;
+}
+
+#mastodon .getting-started__footer,
+.public-layout .getting-started__footer {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+#mastodon .getting-started__footer a,
+.public-layout .getting-started__footer a {
+  text-decoration: none;
+}
+
+#mastodon .getting-started__footer > p,
+.public-layout .getting-started__footer > p {
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
+  transition: font-size 0.2s, line-height 0.2s;
+  transition-duration: 0.2s;
+}
+
+#mastodon .getting-started__footer:hover,
+.public-layout .getting-started__footer:hover,
+#mastodon .getting-started__footer:focus-within,
+.public-layout .getting-started__footer:focus-within {
+  opacity: 1;
+}
+
+#mastodon .getting-started__footer:hover > p,
+.public-layout .getting-started__footer:hover > p,
+#mastodon .getting-started__footer:focus-within > p,
+.public-layout .getting-started__footer:focus-within > p {
+  font-size: 1em;
+  line-height: 1.5;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: font-size 0.1s, line-height 0.25s cubic-bezier(0, 0, 0, 1.3), opacity 0.2s 0.1s;
+}
+
+#mastodon .columns-area__panels__main,
+.public-layout .columns-area__panels__main {
+  margin: 0 10px;
+  padding-top: 30px !important;
+  overflow: visible !important;
+  transition: max-width 0.2s cubic-bezier(0, 0, 0, 1.1), margin 0.2s cubic-bezier(0, 0, 0, 1.1);
+}
+
+@media (min-width: 1320px) {
+  #mastodon .columns-area__panels__main,
+  .public-layout .columns-area__panels__main {
+    max-width: var(--tl-width) !important;
+    padding: 0 15px;
+  }
+}
+#mastodon .columns-area__panels__main > div,
+.public-layout .columns-area__panels__main > div {
+  border-radius: var(--radius);
+}
+
+#mastodon .columns-area__panels__main .scrollable,
+.public-layout .columns-area__panels__main .scrollable {
+  padding-bottom: 40vh !important;
+}
+
+#mastodon .scrollable,
+.public-layout .scrollable,
+#mastodon .column-back-button,
+.public-layout .column-back-button,
+#mastodon .column-header,
+.public-layout .column-header {
+  border: 0;
+  border-radius: var(--radius);
+}
+
+#mastodon .scrollable:not(.scrollable--flex),
+.public-layout .scrollable:not(.scrollable--flex),
+#mastodon .activity-stream,
+.public-layout .activity-stream {
+  border: 0 !important;
+  contain: unset !important;
+}
+
+#mastodon .scrollable:not(.scrollable--flex):not(.activity-stream),
+.public-layout .scrollable:not(.scrollable--flex):not(.activity-stream),
+#mastodon .activity-stream:not(.activity-stream),
+.public-layout .activity-stream:not(.activity-stream) {
+  padding: 10px;
+}
+
+#mastodon .scrollable:not(.scrollable--flex) > [tabindex]:first-child > .focusable,
+.public-layout .scrollable:not(.scrollable--flex) > [tabindex]:first-child > .focusable,
+#mastodon .activity-stream > [tabindex]:first-child > .focusable,
+.public-layout .activity-stream > [tabindex]:first-child > .focusable {
+  margin-top: 0;
+}
+
+#mastodon .scrollable:not(.scrollable--flex) > div > [tabindex]:last-child .status,
+.public-layout .scrollable:not(.scrollable--flex) > div > [tabindex]:last-child .status,
+#mastodon .activity-stream > div > [tabindex]:last-child .status,
+.public-layout .activity-stream > div > [tabindex]:last-child .status {
+  border: 0;
+}
+
+#mastodon .column,
+.public-layout .column,
+#mastodon .columns-area,
+.public-layout .columns-area {
+  overflow: visible !important;
+}
+
+#mastodon .scrollable--flex .account-timeline__header,
+.public-layout .scrollable--flex .account-timeline__header {
+  margin: 0 !important;
+}
+
+#mastodon .account-timeline__header,
+.public-layout .account-timeline__header {
+  margin: -10px;
+  margin-bottom: 10px;
+}
+
+#mastodon .account-timeline__header .account__header,
+.public-layout .account-timeline__header .account__header {
+  overflow: visible !important;
+}
+
+#mastodon .account-timeline__header .account__header__info,
+.public-layout .account-timeline__header .account__header__info {
+  z-index: 2;
+}
+
+#mastodon .account-timeline__header .account__header__image,
+.public-layout .account-timeline__header .account__header__image {
+  height: 0;
+  padding-bottom: 35%;
+  position: sticky;
+  top: calc(0px - var(--radius));
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+#mastodon .account-timeline__header .account__header__image img,
+.public-layout .account-timeline__header .account__header__image img {
+  position: absolute;
+}
+
+#mastodon .account-timeline__header .account__header__bar,
+.public-layout .account-timeline__header .account__header__bar {
+  padding: 10px;
+  border: 0;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-top: calc(0px - var(--radius)) !important;
+}
+
+#mastodon .account-timeline__header .account__header__tabs__name h1,
+.public-layout .account-timeline__header .account__header__tabs__name h1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#mastodon .account-timeline__header .account__header__tabs__name h1 span,
+.public-layout .account-timeline__header .account__header__tabs__name h1 span {
+  margin-right: 0.4em;
+}
+
+#mastodon .account-timeline__header .account__header__bio,
+.public-layout .account-timeline__header .account__header__bio {
+  margin: 0;
+  margin-top: 10px;
+}
+
+#mastodon .account-timeline__header .account__header__bio > div,
+.public-layout .account-timeline__header .account__header__bio > div {
+  padding-inline: 10px !important;
+}
+
+#mastodon .account__header__fields,
+.public-layout .account__header__fields,
+#mastodon .account__header__account-note,
+.public-layout .account__header__account-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 0;
+  gap: 10px;
+}
+
+.public-account-bio .account__header__fields {
+  padding: 20px !important;
+  padding-bottom: 0 !important;
+}
+
+#mastodon .account__header__fields dl,
+.public-layout .account__header__fields dl,
+#mastodon .account__header__account-note dl,
+.public-layout .account__header__account-note dl,
+#mastodon .account__header__fields.account__header__account-note.account__header__account-note,
+.public-layout .account__header__fields.account__header__account-note.account__header__account-note,
+#mastodon .account__header__account-note.account__header__account-note.account__header__account-note,
+.public-layout .account__header__account-note.account__header__account-note.account__header__account-note {
+  border: 0;
+  border-radius: var(--radius-round);
+  overflow: hidden;
+  background-color: var(--border-color);
+  padding: 0 !important;
+}
+
+#mastodon .account__header__fields dl dt,
+.public-layout .account__header__fields dl dt,
+#mastodon .account__header__account-note dl dt,
+.public-layout .account__header__account-note dl dt,
+#mastodon .account__header__fields.account__header__account-note.account__header__account-note dt,
+.public-layout .account__header__fields.account__header__account-note.account__header__account-note dt,
+#mastodon .account__header__account-note.account__header__account-note.account__header__account-note dt,
+.public-layout .account__header__account-note.account__header__account-note.account__header__account-note dt,
+#mastodon .account__header__fields dl dd,
+.public-layout .account__header__fields dl dd,
+#mastodon .account__header__account-note dl dd,
+.public-layout .account__header__account-note dl dd,
+#mastodon .account__header__fields.account__header__account-note.account__header__account-note dd,
+.public-layout .account__header__fields.account__header__account-note.account__header__account-note dd,
+#mastodon .account__header__account-note.account__header__account-note.account__header__account-note dd,
+.public-layout .account__header__account-note.account__header__account-note.account__header__account-note dd {
+  width: unset;
+  padding-block: 0.5em;
+}
+
+#mastodon .account__header__fields dl dt,
+.public-layout .account__header__fields dl dt,
+#mastodon .account__header__account-note dl dt,
+.public-layout .account__header__account-note dl dt,
+#mastodon .account__header__fields.account__header__account-note.account__header__account-note dt,
+.public-layout .account__header__fields.account__header__account-note.account__header__account-note dt,
+#mastodon .account__header__account-note.account__header__account-note.account__header__account-note dt,
+.public-layout .account__header__account-note.account__header__account-note.account__header__account-note dt {
+  background: none;
+}
+
+#mastodon .account__header__fields dl dd,
+.public-layout .account__header__fields dl dd,
+#mastodon .account__header__account-note dl dd,
+.public-layout .account__header__account-note dl dd,
+#mastodon .account__header__fields.account__header__account-note.account__header__account-note dd,
+.public-layout .account__header__fields.account__header__account-note.account__header__account-note dd,
+#mastodon .account__header__account-note.account__header__account-note.account__header__account-note dd,
+.public-layout .account__header__account-note.account__header__account-note.account__header__account-note dd {
+  border: 0;
+}
+
+#mastodon .account__header__fields dl dd:not(.verified),
+.public-layout .account__header__fields dl dd:not(.verified),
+#mastodon .account__header__account-note dl dd:not(.verified),
+.public-layout .account__header__account-note dl dd:not(.verified),
+#mastodon .account__header__fields.account__header__account-note.account__header__account-note dd:not(.verified),
+.public-layout .account__header__fields.account__header__account-note.account__header__account-note dd:not(.verified),
+#mastodon .account__header__account-note.account__header__account-note.account__header__account-note dd:not(.verified),
+.public-layout .account__header__account-note.account__header__account-note.account__header__account-note dd:not(.verified) {
+  padding-left: 0;
+}
+
+#mastodon .account__header__fields.account__header__account-note,
+.public-layout .account__header__fields.account__header__account-note,
+#mastodon .account__header__account-note.account__header__account-note,
+.public-layout .account__header__account-note.account__header__account-note {
+  margin: 10px;
+  margin-bottom: 0;
+  gap: 0;
+  background: none !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+#mastodon .account__header__fields textarea,
+.public-layout .account__header__fields textarea,
+#mastodon .account__header__account-note textarea,
+.public-layout .account__header__account-note textarea {
+  width: 0;
+  flex-grow: 1;
+  margin: 0 !important;
+  border-radius: 0;
+}
+
+#mastodon .account__header__fields label,
+.public-layout .account__header__fields label,
+#mastodon .account__header__account-note label,
+.public-layout .account__header__account-note label {
+  margin: 0;
+  font-weight: 600;
+  padding-inline: 14px;
+}
+
+#mastodon .account__section-headline,
+.public-layout .account__section-headline {
+  background: none;
+}
+
+.with-modals #mastodon .account__section-headline,
+.with-modals .public-layout .account__section-headline {
+  border: 0 !important;
+}
+
+#mastodon .account__section-headline a span,
+.public-layout .account__section-headline a span {
+  font-weight: 400;
+}
+
+#mastodon .account__section-headline a.active span,
+.public-layout .account__section-headline a.active span {
+  font-weight: 700;
+}
+
+#mastodon .notification__filter-bar,
+.public-layout .notification__filter-bar {
+  border: 0 !important;
+  margin-bottom: calc(0px - var(--radius));
+  padding-bottom: var(--radius);
+}
+
+#mastodon .focusable,
+.public-layout .focusable,
+#mastodon .entry,
+.public-layout .entry {
+  overflow: clip;
+  border-radius: var(--radius) !important;
+  transition: background 0.2s, box-shadow 0.4s, margin 0.2s, border 0.2s;
+  animation: fadeUp 0.4s forwards cubic-bezier(0, 1, 1, 1);
+}
+
+#mastodon .focusable.entry,
+.public-layout .focusable.entry,
+#mastodon .entry.entry,
+.public-layout .entry.entry {
+  margin-bottom: 10px;
+}
+
+#mastodon .focusable.entry .status,
+.public-layout .focusable.entry .status,
+#mastodon .entry.entry .status,
+.public-layout .entry.entry .status {
+  border: 0 !important;
+}
+
+#mastodon .focusable:hover,
+.public-layout .focusable:hover,
+#mastodon .entry:hover,
+.public-layout .entry:hover {
+  background-color: var(--hover-color);
+}
+
+#mastodon .status__info,
+.public-layout .status__info {
+  margin-top: 5px;
+}
+
+#mastodon .status__info .status__avatar,
+.public-layout .status__info .status__avatar {
+  top: 15px;
+  left: 15px !important;
+}
+
+#mastodon .status__content,
+.public-layout .status__content {
+  min-height: 1.4em;
+  padding-top: 2px;
+}
+
+#mastodon .media-gallery,
+.public-layout .media-gallery,
+#mastodon .video-player,
+.public-layout .video-player {
+  margin-left: -62px;
+  width: unset;
+  box-shadow: var(--shadow-low);
+  border-radius: var(--radius);
+  margin-block: 15px !important;
+  animation: scaleIn 0.4s;
+  max-width: unset !important;
+  max-height: 80vh !important;
+}
+
+#mastodon .detailed-status__wrapper,
+.public-layout .detailed-status__wrapper,
+#mastodon .detailed-status,
+.public-layout .detailed-status {
+  box-shadow: var(--shadow);
+}
+
+#mastodon .detailed-status__wrapper.detailed-status__wrapper,
+.public-layout .detailed-status__wrapper.detailed-status__wrapper,
+#mastodon .detailed-status.detailed-status__wrapper,
+.public-layout .detailed-status.detailed-status__wrapper {
+  margin-block: 15px;
+}
+
+#mastodon .detailed-status__wrapper .media-gallery,
+.public-layout .detailed-status__wrapper .media-gallery,
+#mastodon .detailed-status .media-gallery,
+.public-layout .detailed-status .media-gallery,
+#mastodon .detailed-status__wrapper .video-player,
+.public-layout .detailed-status__wrapper .video-player,
+#mastodon .detailed-status .video-player,
+.public-layout .detailed-status .video-player {
+  margin-left: 0 !important;
+  max-height: unset !important;
+}
+
+#mastodon .status__action-bar,
+.public-layout .status__action-bar,
+#mastodon .detailed-status__action-bar,
+.public-layout .detailed-status__action-bar {
+  padding-top: 0;
+}
+
+#mastodon .status__action-bar .icon-button,
+.public-layout .status__action-bar .icon-button,
+#mastodon .detailed-status__action-bar .icon-button,
+.public-layout .detailed-status__action-bar .icon-button {
+  display: inline-flex;
+  align-items: center;
+  width: unset !important;
+  padding: 0.3em 0.5em !important;
+  height: unset !important;
+  flex: 0 1 auto !important;
+  min-width: 0;
+}
+
+#mastodon .status__action-bar .icon-button::after,
+.public-layout .status__action-bar .icon-button::after,
+#mastodon .detailed-status__action-bar .icon-button::after,
+.public-layout .detailed-status__action-bar .icon-button::after {
+  content: attr(aria-label);
+  font-size: 0.7em;
+  margin-left: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mastodon .status__action-bar .status__action-bar-dropdown,
+.public-layout .status__action-bar .status__action-bar-dropdown,
+#mastodon .detailed-status__action-bar .status__action-bar-dropdown,
+.public-layout .detailed-status__action-bar .status__action-bar-dropdown,
+#mastodon .status__action-bar .detailed-status__action-bar-dropdown,
+.public-layout .status__action-bar .detailed-status__action-bar-dropdown,
+#mastodon .detailed-status__action-bar .detailed-status__action-bar-dropdown,
+.public-layout .detailed-status__action-bar .detailed-status__action-bar-dropdown,
+#mastodon .status__action-bar .detailed-status__button,
+.public-layout .status__action-bar .detailed-status__button,
+#mastodon .detailed-status__action-bar .detailed-status__button,
+.public-layout .detailed-status__action-bar .detailed-status__button {
+  display: contents;
+}
+
+#mastodon .status__action-bar.detailed-status__action-bar,
+.public-layout .status__action-bar.detailed-status__action-bar,
+#mastodon .detailed-status__action-bar.detailed-status__action-bar,
+.public-layout .detailed-status__action-bar.detailed-status__action-bar {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+#mastodon .status__action-bar.detailed-status__action-bar .icon-button,
+.public-layout .status__action-bar.detailed-status__action-bar .icon-button,
+#mastodon .detailed-status__action-bar.detailed-status__action-bar .icon-button,
+.public-layout .detailed-status__action-bar.detailed-status__action-bar .icon-button {
+  flex-grow: 1 !important;
+  justify-content: center;
+}
+
+#mastodon .status,
+.public-layout .status {
+  overflow: visible !important;
+  padding: 15px 15px 15px 78px !important;
+}
+
+#mastodon .detailed-status,
+.public-layout .detailed-status {
+  padding: 15px !important;
+}
+
+#mastodon .tabs-bar__wrapper,
+.public-layout .tabs-bar__wrapper {
+  transition: margin-left 0.2s cubic-bezier(0, 0, 0, 1.1);
+}
+
+@media (min-width: 1191px) {
+  #mastodon .tabs-bar__wrapper,
+  .public-layout .tabs-bar__wrapper {
+    position: fixed;
+    width: 285px;
+    margin-left: 600px;
+    padding-top: 0;
+    margin-top: 30px;
+    overflow: clip;
+    border-radius: var(--radius) var(--radius) !important;
+    box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.1);
+  }
+  #mastodon .tabs-bar__wrapper .column-header,
+  .public-layout .tabs-bar__wrapper .column-header,
+  #mastodon .tabs-bar__wrapper .column-header__buttons button,
+  .public-layout .tabs-bar__wrapper .column-header__buttons button {
+    background: none !important;
+  }
+  #mastodon .tabs-bar__wrapper .column-header,
+  .public-layout .tabs-bar__wrapper .column-header {
+    font-weight: 600;
+  }
+}
+@media (min-width: 895px) and (max-width: 1191px) {
+  #mastodon .tabs-bar__wrapper,
+  .public-layout .tabs-bar__wrapper {
+    padding-top: 0;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar,
+  .public-layout .tabs-bar__wrapper .tabs-bar {
+    margin-bottom: 0;
+    border: 0 !important;
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal {
+    border-radius: 0 !important;
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal .column-header,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal .column-header,
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal button,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal button {
+    border-radius: 0 !important;
+  }
+  #mastodon .tabs-bar__wrapper ~ .columns-area .scrollable,
+  .public-layout .tabs-bar__wrapper ~ .columns-area .scrollable {
+    border-radius: 0 !important;
+  }
+}
+@media (min-width: 1191px) and (min-width: 1320px) {
+  #mastodon .tabs-bar__wrapper,
+  .public-layout .tabs-bar__wrapper {
+    margin-left: calc(var(--tl-width) - 5px);
+  }
+}
+#mastodon .navigation-panel,
+.public-layout .navigation-panel {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  height: calc(100% - 30px);
+  box-sizing: border-box;
+}
+
+#mastodon .column-link,
+.public-layout .column-link {
+  flex-grow: 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  align-content: center;
+  max-height: 3.3em;
+  min-height: 2.7em !important;
+  padding-block: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#mastodon .column-link .column-link__icon,
+.public-layout .column-link .column-link__icon,
+.column-header__icon {
+  margin-right: 1em !important;
+}
+
+#mastodon .column-link::before,
+.public-layout .column-link::before {
+  content: "" !important;
+  position: absolute;
+  border-radius: 100px !important;
+  width: unset !important;
+  height: unset !important;
+  inset: 0px 0px !important;
+  opacity: 0 !important;
+  background-color: rgba(150, 150, 150, 0.1);
+  transition: opacity 0.2s;
+}
+
+#mastodon .column-link:hover:before,
+.public-layout .column-link:hover:before,
+#mastodon .column-link:focus:before,
+.public-layout .column-link:focus:before {
+  opacity: 1 !important;
+}
+
+#mastodon.public-layout .header,
+.public-layout.public-layout .header {
+  border-radius: var(--radius);
+}
+
+#mastodon.public-layout .public-account-header,
+.public-layout.public-layout .public-account-header {
+  border-radius: var(--radius);
+  --border-color: transparent !important;
+  border: 0 !important;
+}
+
+#mastodon.public-layout .public-account-header .public-account-header__bar::before,
+.public-layout.public-layout .public-account-header .public-account-header__bar::before {
+  border: 0;
+}
+
+#mastodon.public-layout .grid,
+.public-layout.public-layout .grid {
+  gap: 20px;
+}
+
+#mastodon.public-layout .public-account-header + .grid .column-1,
+.public-layout.public-layout .public-account-header + .grid .column-1 {
+  position: sticky;
+  align-self: flex-end;
+  bottom: 0;
+  min-height: calc(100vh - 80px);
+}
+
+#mastodon.public-layout .public-account-header + .grid .column-1 > *,
+.public-layout.public-layout .public-account-header + .grid .column-1 > * {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 0 !important;
+}
+
+#mastodon.public-layout .public-account-header + .grid .column-1 a,
+.public-layout.public-layout .public-account-header + .grid .column-1 a,
+#mastodon.public-layout .public-account-header + .grid .column-1 .hero-widget__text,
+.public-layout.public-layout .public-account-header + .grid .column-1 .hero-widget__text {
+  border: 0 !important;
+}
+
+#mastodon.public-layout .box-widget,
+.public-layout.public-layout .box-widget,
+#mastodon.public-layout .directory__tag > a,
+.public-layout.public-layout .directory__tag > a,
+#mastodon.public-layout .hero-widget,
+.public-layout.public-layout .hero-widget,
+#mastodon.public-layout .landing-page__call-to-action,
+.public-layout.public-layout .landing-page__call-to-action,
+#mastodon.public-layout .table-of-contents,
+.public-layout.public-layout .table-of-contents,
+#mastodon.public-layout .rules-list,
+.public-layout.public-layout .rules-list {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+#mastodon.public-layout .footer .column-3,
+.public-layout.public-layout .footer .column-3,
+#mastodon.public-layout .footer .column-4,
+.public-layout.public-layout .footer .column-4 {
+  text-align: right;
+}
+
+@media (max-width: 895px) {
+  #mastodon .columns-area__panels__main,
+  .public-layout .columns-area__panels__main {
+    padding: 0 !important;
+  }
+  #mastodon .is-composing .columns-area__panels__main,
+  .public-layout .is-composing .columns-area__panels__main {
+    padding-bottom: 40px !important;
+  }
+  #mastodon .columns-area__panels__main .scrollable,
+  .public-layout .columns-area__panels__main .scrollable,
+  #mastodon .columns-area__panels__main .account__header__image,
+  .public-layout .columns-area__panels__main .account__header__image {
+    border-radius: 0 !important;
+  }
+  #mastodon .tabs-bar__wrapper,
+  .public-layout .tabs-bar__wrapper {
+    position: fixed !important;
+    top: unset !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none !important;
+    padding: 0;
+    background: none;
+    border-radius: 0 !important;
+    pointer-events: none;
+    filter: brightness(0.95);
+  }
+  #mastodon .tabs-bar__wrapper > *,
+  .public-layout .tabs-bar__wrapper > * {
+    pointer-events: all;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar,
+  .public-layout .tabs-bar__wrapper .tabs-bar {
+    order: 2;
+    margin: 0;
+    border: 0;
+    border-radius: var(--radius-round) var(--radius-round) 0 0;
+    color: #fff !important;
+    overflow: visible !important;
+    padding-inline: 5px;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a,
+  .public-layout .tabs-bar__wrapper .tabs-bar a {
+    flex-grow: 1 !important;
+    padding-block: 20px;
+    position: relative;
+    border: 0;
+    background: none !important;
+    transition: transform 0.4s cubic-bezier(0, 0, 0, 4), filter 0.1s;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a > i,
+  .public-layout .tabs-bar__wrapper .tabs-bar a > i {
+    font-size: 18px;
+    filter: opacity(0.7);
+    transition: transform 0.2s cubic-bezier(0, 0, 0, 1.2);
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a > i .icon-with-badge__badge,
+  .public-layout .tabs-bar__wrapper .tabs-bar a > i .icon-with-badge__badge {
+    font-size: 0.5em;
+    border-radius: var(--radius-round);
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a::before,
+  .public-layout .tabs-bar__wrapper .tabs-bar a::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 5px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: currentColor;
+    left: 50%;
+    margin-left: -2.5px;
+    transition: bottom 0.2s cubic-bezier(0, 0, 0, 4), width 0.2s, margin-left 0.2s;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a:active,
+  .public-layout .tabs-bar__wrapper .tabs-bar a:active {
+    transform: translateY(5px);
+    transition: transform 1s;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a.active,
+  .public-layout .tabs-bar__wrapper .tabs-bar a.active {
+    transform: translateY(-2px);
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a.active i,
+  .public-layout .tabs-bar__wrapper .tabs-bar a.active i {
+    filter: none !important;
+  }
+  #mastodon .tabs-bar__wrapper .tabs-bar a.active::before,
+  .public-layout .tabs-bar__wrapper .tabs-bar a.active::before {
+    bottom: -6px;
+    width: 10px;
+    margin-left: -5px;
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal {
+    margin: 10px 20px !important;
+    width: max-content !important;
+    box-shadow: var(--shadow) !important;
+    max-width: calc(100vw - 130px);
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal > button,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal > button {
+    padding-inline: 20px;
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal button,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal button {
+    min-width: 60px;
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal .column-header__collapsible,
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal .column-header__collapsible {
+    transition: margin-top 0.2s cubic-bezier(0, 0, 0, 2);
+    max-width: 100%;
+    border-radius: var(--radius);
+  }
+  #mastodon .tabs-bar__wrapper #tabs-bar__portal .column-header__collapsible:not(.collapsed),
+  .public-layout .tabs-bar__wrapper #tabs-bar__portal .column-header__collapsible:not(.collapsed) {
+    width: calc(100vw - 40px);
+    margin-top: 5px;
+  }
+  .floating-action-button {
+    bottom: 70px;
+  }
+  #mastodon .icon-button:after,
+  .public-layout .icon-button:after {
+    content: unset !important;
+  }
+  #mastodon .status__action-bar,
+  .public-layout .status__action-bar {
+    margin-left: -63px;
+    margin-bottom: -10px;
+  }
+  #mastodon .status__action-bar .icon-button,
+  .public-layout .status__action-bar .icon-button {
+    flex-grow: 1 !important;
+    margin: 0 !important;
+    justify-content: center;
+    padding: 0.7em !important;
+  }
+  #mastodon .modal-root__modal .status.light,
+  .public-layout .modal-root__modal .status.light {
+    overflow: hidden !important;
+    padding-left: 70px !important;
+  }
+}
+.layout-multiple-columns #mastodon .columns-area {
+  overflow: auto hidden !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .column-header,
+.layout-multiple-columns #mastodon .columns-area .scrollable,
+.layout-multiple-columns #mastodon .columns-area .column-back-button,
+.layout-multiple-columns #mastodon .columns-area .account__header__image {
+  border-radius: 0 !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .icon-button:after {
+  content: unset !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area > div {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area > div:not(:last-child):not(.drawer) {
+  padding-right: 2px !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area > div.column {
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+.layout-multiple-columns #mastodon .columns-area > div:first-child {
+  margin-left: auto !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area > div:last-child {
+  margin-right: auto !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer {
+  padding-inline: 10px !important;
+  padding-top: 20px !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer .drawer__header {
+  border-radius: var(--radius-round);
+  margin-inline: 5px;
+  overflow: hidden;
+  border: 0 !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer .drawer__header a {
+  border: 0;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer .drawer__header a:first-child {
+  padding-left: 15px !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer .drawer__header a:last-child {
+  padding-right: 15px !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer__inner:not(.darker),
+.layout-multiple-columns #mastodon .columns-area .drawer__inner__mastodon {
+  background-color: transparent;
+  border: 0 !important;
+}
+
+.layout-multiple-columns #mastodon .columns-area .drawer__inner.darker {
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-inline: 5px;
+  width: calc(100% - 10px);
+}
+
+#mastodon .modal-root__container,
+.public-layout .modal-root__container {
+  animation: bounceIn 0.7s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @-moz-keyframes bounceIn {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    30% {
+      transform: scale(0.99);
+      opacity: 1;
+    }
+    60% {
+      transform: scale(1.005);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes bounceIn {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    30% {
+      transform: scale(0.99);
+      opacity: 1;
+    }
+    60% {
+      transform: scale(1.005);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-o-keyframes bounceIn {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    30% {
+      transform: scale(0.99);
+      opacity: 1;
+    }
+    60% {
+      transform: scale(1.005);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    30% {
+      transform: scale(0.99);
+      opacity: 1;
+    }
+    60% {
+      transform: scale(1.005);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeUp {
+    from {
+      transform: translateY(20px);
+    }
+  }
+  @-webkit-keyframes fadeUp {
+    from {
+      transform: translateY(20px);
+    }
+  }
+  @-o-keyframes fadeUp {
+    from {
+      transform: translateY(20px);
+    }
+  }
+  @keyframes fadeUp {
+    from {
+      transform: translateY(20px);
+    }
+  }
+  @-moz-keyframes scaleIn {
+    from {
+      transform: scale(0.98);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes scaleIn {
+    from {
+      transform: scale(0.98);
+      opacity: 0;
+    }
+  }
+  @-o-keyframes scaleIn {
+    from {
+      transform: scale(0.98);
+      opacity: 0;
+    }
+  }
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.98);
+      opacity: 0;
+    }
+  }
+}
 html {
   scrollbar-color: rgb(217.77140823, 213.9977132428, 217.2423036333) rgba(217.77140823, 213.9977132428, 217.2423036333, 0.25);
 }
@@ -14918,17 +16550,8 @@ a.column-link {
 .dropdown-menu {
   background: rgb(240.8424835458, 236.9952977363, 240.3023635288);
 }
-.dropdown-menu__arrow.left {
-  border-left-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.dropdown-menu__arrow.top {
-  border-top-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.dropdown-menu__arrow.bottom {
-  border-bottom-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.dropdown-menu__arrow.right {
-  border-right-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
+.dropdown-menu__arrow::before {
+  background-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
 }
 .dropdown-menu__item a {
   background: rgb(240.8424835458, 236.9952977363, 240.3023635288);
@@ -14940,18 +16563,6 @@ a.column-link {
 
 .account-popup.dropdown-menu {
   background: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.account-popup__arrow.dropdown-menu__arrow.left {
-  border-left-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.account-popup__arrow.dropdown-menu__arrow.top {
-  border-top-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.account-popup__arrow.dropdown-menu__arrow.bottom {
-  border-bottom-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
-}
-.account-popup__arrow.dropdown-menu__arrow.right {
-  border-right-color: rgb(240.8424835458, 236.9952977363, 240.3023635288);
 }
 .account-popup__display-name__html {
   color: rgb(101.2473332309, 97.9760010282, 100.7948505226);
@@ -15491,6 +17102,240 @@ a.column-link {
 .mute-modal select {
   border: 0px solid rgb(204.7885004665, 201.0588049779, 204.2660101162);
   background: #ffffff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23CDC9CC'/></svg>") no-repeat right 8px center/auto 16px;
+}
+
+/* ==UserStyle==
+@name         Adjust-fedibird-modern-theme
+@version      20230222.1
+@namespace    userstyles.world/user/laughk
+@description  adujust "Modern" theme on fedibird.com. 
+fedibird.com のモダンテーマ（ダーク・ライト共通）のデザインを調整します
+@author       laughk
+@license      MIT License
+==/UserStyle== */
+/* アクションボタンの修正 */
+#mastodon .status__action-bar .icon-button::after,
+.public-layout .status__action-bar .icon-button::after,
+#mastodon .detailed-status__action-bar .icon-button::after,
+.public-layout .detailed-status__action-bar .icon-button::after {
+  display: none;
+}
+
+/* 引用に含まれる画像・動画の位置 */
+div.quote-status > div.video-player.inline,
+div.quote-status > div.media-gallery {
+  left: 15%;
+  width: 90% !important;
+  padding: 1rem;
+}
+
+/*  statuses 表示の際の引用部分を調整  */
+.quote-status > a:nth-child(1) > div:nth-child(1) {
+  padding-top: 2.5px;
+  padding-left: 2.5px;
+}
+
+.quote-status > a:nth-child(1) > span:nth-child(2) > bdi:nth-child(1) {
+  padding-left: 0.25rem;
+}
+
+/* 引用に含まれる画像・動画の位置 */
+div.quote-status > div.video-player.inline,
+div.quote-status > div.media-gallery {
+  left: 15%;
+  width: 90% !important;
+}
+
+/* 引用の表示調整 */
+/* 引用アカウントのアイコンの位置の修正  */
+div.status__info:nth-child(1) > a:nth-child(1) > div:nth-child(1),
+div.quote-status > div.status__info > a.status__display-name > div.status__avatar {
+  top: revert !important;
+}
+
+div.status__info:nth-child(1) > a:nth-child(1) > span:nth-child(2),
+div.quote-status > div.status__info > a.status__display-name > .display-name {
+  padding-left: 35px !important; /* 本当は div.status__avatar に left revert; を指定できたほうがいいが、元の css で `15 px !important;` されてしまっているのでこちらの元の padding に +15px する */
+}
+
+/* 引用に含まれるテキストエリアの調整 */
+div.status__content:nth-child(2),
+div.quote-status > div.status__content.status__content--with-action {
+  padding: 0.725rem;
+}
+
+/* 公開ページの引用投稿の表示調整 */
+/* 枠の中に引用内容が収まるようにする */
+div.status.quote-status {
+  padding-left: 0.75rem !important;
+  padding-top: 0.75rem !important;
+  width: 95% !important;
+  box-shadow: 1px 1px 1px 1px; /* 本当は border でやりたいが、 `0px !important` されているので box-shadow でそれっぽくくくる */
+}
+
+/* 引用した投稿者の名前・アイコンの位置を調整 */
+div.status.quote-status > a.status__display-name {
+  display: flex !important;
+}
+
+div.status.quote-status > a.status__display-name.u-url > div.status__avatar {
+  position: unset;
+  width: 1.5rem !important;
+  padding-top: 0.25rem !important;
+  padding-left: 0.25rem !important;
+}
+
+div.status.quote-status > a.status__display-name.u-url > span.display-name {
+  padding-left: unset;
+}
+
+/* 引用投稿内の画像・動画の大きさと位置 */
+div.quote-status > div > div.video-player.inline,
+div.quote-status > div > div.media-gallery {
+  left: 15% !important;
+  width: 90% !important;
+}
+
+/*
+  2025-03-21 21:52更新
+  Fedibirdの「モダン」テーマはウィンドウ幅が狭い時の表示がイマイチなので調整しました。
+  ついでに以下の調整も行っています。
+  ・グループカラムの折り畳み部分の修正
+  ・引用投稿のメディアの表示位置の修正
+  ・上級者UIのナビゲーションの調整
+  Windows 11 + Vivaldi 7.2 + Stylus、Android 13 + Android System Webview 134 + Hermit 28.0.0で動作確認しています。
+*/
+.layout-single-column {
+  /* 投稿ボタンの位置を調整 */
+  /* タブバーがスクロールできないのを修正 */
+  /* 「タブバーを下に配置する」がオンの場合のレイアウトを調整 */
+  /* タブバーの各項目のpaddingを調整 */
+  /* タブバーのメニューボタンの位置を調整 */
+}
+.layout-single-column #mastodon .floating-action-button {
+  bottom: calc(env(safe-area-inset-bottom) + 1.3125rem + 70px);
+}
+.layout-single-column :is(#mastodon, .public-layout) .tabs-bar {
+  overflow-x: scroll !important;
+  overflow-y: hidden !important;
+}
+@media (max-width: 895px) {
+  .layout-single-column :is(#mastodon, .public-layout) .tabs-bar__wrapper .tabs-bar.bottom-bar {
+    width: 100%;
+    position: unset;
+  }
+  .layout-single-column :is(#mastodon, .public-layout) #tabs-bar__portal,
+  .layout-single-column :is(#mastodon, .public-layout) .column-header__wrapper.active {
+    border: 0;
+    border-radius: var(--radius);
+  }
+}
+.layout-single-column :is(#mastodon, .public-layout) .tabs-bar__wrapper .tabs-bar a {
+  padding-block: 10px;
+}
+.layout-single-column .tabs-bar :is(.tabs-bar__external-link, .tabs-bar__link).hamburger.short-label i {
+  margin: 10px;
+}
+@media (max-width: 895px) {
+  .layout-single-column .is-composing .columns-area__panels__main {
+    padding-bottom: 0 !important;
+  }
+}
+
+.layout-multiple-columns {
+  /* 上級者UIのナビゲーションのpaddingを調整 */
+}
+.layout-multiple-columns :is(#mastodon, .public-layout) .columns-area__panels__pane__inner {
+  margin-top: 0;
+}
+.layout-multiple-columns :is(#mastodon, .public-layout) .navigation-panel {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: calc(100% - 10px);
+}
+
+/* グループカラム等の折り畳み部分の高さを修正 */
+:is(#mastodon, .public-layout) .column-header__collapsible {
+  flex: 0 0 auto;
+}
+
+/* 引用投稿のメディアの位置とpaddingを修正 */
+:is(#mastodon, .public-layout) .quote-status :is(.media-gallery, .video-player.inline) {
+  left: 5%;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+#mastodon .status__action-bar,
+.public-layout .status__action-bar {
+  margin-left: -62px;
+}
+body.rtl #mastodon .status__action-bar,
+body.rtl .public-layout .status__action-bar {
+  margin-left: unset;
+  margin-right: -62px;
+}
+
+#mastodon .detailed-status__action-bar,
+.public-layout .detailed-status__action-bar {
+  margin-left: auto;
+}
+
+#mastodon .status__action-bar .icon-button,
+.public-layout .status__action-bar .icon-button,
+#mastodon .detailed-status__action-bar .icon-button,
+.public-layout .detailed-status__action-bar .icon-button {
+  display: flex;
+  padding: 0.3em 0.1em !important;
+  height: inherit !important;
+  flex: 1 0 auto !important;
+}
+
+#mastodon .media-gallery,
+.public-layout .media-gallery,
+#mastodon .video-player,
+.public-layout .video-player {
+  margin-left: -62px;
+}
+body.rtl #mastodon .media-gallery,
+body.rtl .public-layout .media-gallery,
+body.rtl #mastodon .video-player,
+body.rtl .public-layout .video-player {
+  margin-left: unset;
+  margin-right: -62px;
+}
+
+#mastodon .status,
+.public-layout .status {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  padding-inline-start: 78px !important;
+  padding-inline-end: 15px !important;
+}
+.follow-button-on-timeline #mastodon .status .status__content,
+.follow-button-on-timeline .public-layout .status .status__content {
+  min-height: 39px;
+}
+
+:is(#mastodon, .public-layout) .quote-status :is(.media-gallery, .video-player.inline) {
+  left: 5%;
+  margin-left: 0 !important;
+  padding: 0;
+}
+body.rtl :is(#mastodon, .public-layout) .quote-status :is(.media-gallery, .video-player.inline) {
+  left: auto;
+  right: 5%;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+#mastodon .detailed-status__action-bar,
+.public-layout .detailed-status__action-bar {
+  padding-top: 10px;
+}
+
+.status__expand {
+  height: calc(100% - 55px);
 }
 
 /*# sourceMappingURL=takibi-modoki-violet.css.map */
