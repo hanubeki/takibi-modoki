@@ -15250,6 +15250,9 @@ a.column-link {
 .search__input::placeholder {
   color: rgb(151.5595915665, 156.1163740938, 158.0626201903);
 }
+.search__input:focus {
+  background: rgb(167.9211092715, 208.3985950159, 208.750659318);
+}
 
 .list-editor .search .search__input {
   border-top: 0;

@@ -266,6 +266,10 @@ a.column-link {
   &::placeholder {
     color: mix($dark-text-color, $action-button-color, $weight: 30%, $method: oklab);
   }
+
+  &:focus {
+    background: mix(lighten($ui-base-color, 4%), $ui-primary-color, $weight: 50%, $method: oklab);
+  }
 }
 
 .list-editor .search .search__input {

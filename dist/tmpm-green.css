@@ -16403,6 +16403,9 @@ a.column-link {
 .search__input::placeholder {
   color: rgb(152.7705227958, 156.3395343419, 153.2917839429);
 }
+.search__input:focus {
+  background: rgb(194.2972086305, 204.1868263266, 173.843463219);
+}
 
 .list-editor .search .search__input {
   border-top: 0;
