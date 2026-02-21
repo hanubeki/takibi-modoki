@@ -146,7 +146,9 @@ body {
   color: rgb(48.7312530526, 44.6047960646, 44.7522715683);
   text-rendering: optimizelegibility;
   font-feature-settings: "kern";
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -767,7 +769,8 @@ article .__ns__pop2top {
   left: 0;
 }
 .public-layout .public-account-header__image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   width: 100%;
   height: 100%;
@@ -1352,7 +1355,8 @@ article .__ns__pop2top {
   background: #000000;
 }
 .hero-widget__img img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   width: 100%;
   height: 100%;
@@ -2086,7 +2090,8 @@ code {
   margin-bottom: 15px;
 }
 .simple_form .input.with_block_label ul {
-  columns: 2;
+  -moz-columns: 2;
+       columns: 2;
 }
 .simple_form .input.datetime .label_input select {
   display: inline-block;
@@ -2210,6 +2215,9 @@ code {
   border-radius: 4px;
   padding: 10px;
 }
+.simple_form input[type=text]::-moz-placeholder, .simple_form input[type=number]::-moz-placeholder, .simple_form input[type=email]::-moz-placeholder, .simple_form input[type=password]::-moz-placeholder, .simple_form input[type=url]::-moz-placeholder, .simple_form textarea::-moz-placeholder {
+  color: rgb(96.8967569998, 92.2309479129, 92.3881413024);
+}
 .simple_form input[type=text]::placeholder,
 .simple_form input[type=number]::placeholder,
 .simple_form input[type=email]::placeholder,
@@ -2255,6 +2263,9 @@ code {
 .simple_form textarea:focus {
   border-color: rgb(225.9254932836, 113.1207407847, 180.9500095022);
   background: rgb(232.4505046911, 226.9358024646, 227.1127665955);
+}
+.simple_form input[type=text]:focus:invalid:not(:-moz-placeholder), .simple_form input[type=text]:required:invalid:not(:-moz-placeholder), .simple_form input[type=number]:focus:invalid:not(:-moz-placeholder), .simple_form input[type=number]:required:invalid:not(:-moz-placeholder), .simple_form input[type=email]:focus:invalid:not(:-moz-placeholder), .simple_form input[type=email]:required:invalid:not(:-moz-placeholder), .simple_form input[type=password]:focus:invalid:not(:-moz-placeholder), .simple_form input[type=password]:required:invalid:not(:-moz-placeholder) {
+  border-color: rgb(201.4579226992, 40.5203943691, 73.0638323054);
 }
 .simple_form input[type=text]:focus:invalid:not(:placeholder-shown), .simple_form input[type=text]:required:invalid:not(:placeholder-shown),
 .simple_form input[type=number]:focus:invalid:not(:placeholder-shown),
@@ -2356,7 +2367,9 @@ code {
   background-color: rgb(232.0271404895, 72.936159915, 97.1836858606);
 }
 .simple_form select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box;
   font-size: 16px;
   color: rgb(48.7312530526, 44.6047960646, 44.7522715683);
@@ -3002,7 +3015,8 @@ code {
   width: 100%;
   height: 100%;
   margin: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 4px 4px 0 0;
 }
 @media screen and (max-width: 600px) {
@@ -3042,7 +3056,8 @@ code {
   margin: 0;
   border-radius: 4px;
   background: rgb(232.4505046911, 226.9358024646, 227.1127665955);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card__bar .display-name {
   margin-left: 15px;
@@ -3940,6 +3955,9 @@ body > [data-popper-placement] {
   border: 0;
   outline: 0;
 }
+.compose-form .autosuggest-textarea__textarea::-moz-placeholder, .compose-form .spoiler-input__input::-moz-placeholder {
+  color: rgb(116.9618884109, 112.1288661123, 112.2896206346);
+}
 .compose-form .autosuggest-textarea__textarea::placeholder,
 .compose-form .spoiler-input__input::placeholder {
   color: rgb(116.9618884109, 112.1288661123, 112.2896206346);
@@ -4116,6 +4134,10 @@ body > [data-popper-placement] {
 .compose-form .compose-form__modifiers .compose-form__upload-description textarea:focus {
   color: #ffffff;
 }
+.compose-form .compose-form__modifiers .compose-form__upload-description textarea::-moz-placeholder {
+  opacity: 0.75;
+  color: rgb(102.561378293, 97.8459715859, 98.0041994637);
+}
 .compose-form .compose-form__modifiers .compose-form__upload-description textarea::placeholder {
   opacity: 0.75;
   color: rgb(102.561378293, 97.8459715859, 98.0041994637);
@@ -4194,7 +4216,8 @@ body > [data-popper-placement] {
 .emojione {
   font-size: inherit;
   vertical-align: middle;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: -0.2ex 0 0.2ex;
   width: 16px;
   height: 16px;
@@ -4545,7 +4568,9 @@ body > [data-popper-placement] {
   cursor: pointer;
   outline: none;
   padding: 0;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .quote-status > .muted-quote {
   color: rgb(116.9618884109, 112.1288661123, 112.2896206346);
@@ -4609,8 +4634,6 @@ body > [data-popper-placement] {
   min-height: 54px;
   border-bottom: 1px solid rgb(206.3006794799, 200.9125653848, 201.0863565507);
   cursor: auto;
-  opacity: 1;
-  animation: fade 150ms linear;
 }
 @supports (-ms-overflow-style: -ms-autohiding-scrollbar) {
   .status {
@@ -4624,6 +4647,10 @@ body > [data-popper-placement] {
   100% {
     opacity: 1;
   }
+}
+.status {
+  opacity: 1;
+  animation: fade 150ms linear;
 }
 .status .video-player,
 .status .audio-player {
@@ -5417,7 +5444,8 @@ a.account__display-name:hover strong {
   max-width: 100%;
   max-height: 80%;
   background: url("../images/void.png") repeat;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .image-loader .loading-bar {
   position: relative;
@@ -5439,7 +5467,8 @@ a.account__display-name:hover strong {
   max-height: 80%;
   width: auto;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .navigation-bar {
@@ -5576,7 +5605,8 @@ a.account__display-name:hover strong {
   width: 14px;
   height: 5px;
   background-color: rgb(102.561378293, 97.8459715859, 98.0041994637);
-  mask-image: url("data:image/svg+xml;utf8,<svg width='14' height='5' xmlns='http://www.w3.org/2000/svg'><path d='M7 0L0 5h14L7 0z' fill='white'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg width='14' height='5' xmlns='http://www.w3.org/2000/svg'><path d='M7 0L0 5h14L7 0z' fill='white'/></svg>");
+          mask-image: url("data:image/svg+xml;utf8,<svg width='14' height='5' xmlns='http://www.w3.org/2000/svg'><path d='M7 0L0 5h14L7 0z' fill='white'/></svg>");
 }
 .dropdown-menu__arrow.top {
   bottom: -5px;
@@ -6384,13 +6414,17 @@ a.account__display-name:hover strong {
 }
 .drawer__inner__mastodon > img {
   display: block;
-  object-fit: contain;
-  object-position: bottom left;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom left;
+     object-position: bottom left;
   width: 85%;
   height: 100%;
   pointer-events: none;
   user-drag: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (min-height: 640px) {
   .drawer__inner__mastodon {
@@ -6525,7 +6559,9 @@ a.account__display-name:hover strong {
   background-color: transparent;
   border: 0;
   padding: 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   -webkit-tap-highlight-color: rgba(225.858451815, 220.3745828205, 220.5507685438, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -6982,7 +7018,8 @@ a.status-card.compact:hover {
   margin: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   background-position: center center;
 }
@@ -6993,7 +7030,8 @@ a.status-card.compact:hover {
   margin: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   position: absolute;
   top: 0;
   left: 0;
@@ -7393,7 +7431,9 @@ a.status-card.compact:hover {
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .media-spoiler:hover, .media-spoiler:active, .media-spoiler:focus {
   padding: 0;
@@ -7506,6 +7546,9 @@ a.status-card.compact:hover {
   font-size: 14px;
   margin: 0;
 }
+.column-settings__hashtags .column-select__control::-moz-placeholder {
+  color: rgb(96.8967569998, 92.2309479129, 92.3881413024);
+}
 .column-settings__hashtags .column-select__control::placeholder {
   color: rgb(96.8967569998, 92.2309479129, 92.3881413024);
 }
@@ -7563,8 +7606,6 @@ a.status-card.compact:hover {
   margin-top: 10px;
   color: rgb(102.561378293, 97.8459715859, 98.0041994637);
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
-  padding: 0;
-  background: rgb(102.561378293, 97.8459715859, 98.0041994637);
 }
 .column-settings__hashtags .column-select__menu h4 {
   text-transform: uppercase;
@@ -7582,6 +7623,10 @@ a.status-card.compact:hover {
 .column-settings__hashtags .column-select__menu em {
   font-weight: 500;
   color: rgb(48.7312530526, 44.6047960646, 44.7522715683);
+}
+.column-settings__hashtags .column-select__menu {
+  padding: 0;
+  background: rgb(102.561378293, 97.8459715859, 98.0041994637);
 }
 .column-settings__hashtags .column-select__menu-list {
   padding: 6px;
@@ -8015,6 +8060,9 @@ a.status-card.compact:hover {
   line-height: 18px;
   font-size: 16px;
 }
+.search__input::-moz-placeholder {
+  color: rgb(96.8967569998, 92.2309479129, 92.3881413024);
+}
 .search__input::placeholder {
   color: rgb(96.8967569998, 92.2309479129, 92.3881413024);
 }
@@ -8158,7 +8206,9 @@ a.status-card.compact:hover {
   align-content: space-around;
   z-index: 9999;
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .modal-root__modal {
@@ -8372,7 +8422,9 @@ a.status-card.compact:hover {
   justify-content: center;
   display: flex;
   opacity: 0;
-  user-select: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 
 .error-modal__body {
@@ -8551,7 +8603,9 @@ a.status-card.compact:hover {
   padding: 10px;
 }
 .boost-modal__container .status {
-  user-select: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
   border-bottom: 0;
 }
 
@@ -8903,7 +8957,9 @@ a.status-card.compact:hover {
 .mute-modal__container select,
 .block-modal__container select,
 .report-modal__target select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box;
   font-size: 14px;
   color: rgb(48.7312530526, 44.6047960646, 44.7522715683);
@@ -9181,13 +9237,15 @@ a.status-card.compact:hover {
   width: 100%;
 }
 .media-gallery__item-thumbnail img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .media-gallery__preview {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -9208,7 +9266,8 @@ a.status-card.compact:hover {
 .media-gallery__item-gifv-thumbnail {
   cursor: zoom-in;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -9323,7 +9382,8 @@ a.status-card.compact:hover {
   outline: 0;
 }
 .video-player.inline video {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -9585,7 +9645,8 @@ a.status-card.compact:hover {
   width: 100%;
   height: 100%;
   margin: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .directory__card__bar {
   display: flex;
@@ -9619,7 +9680,8 @@ a.status-card.compact:hover {
   margin: 0;
   border-radius: 4px;
   background: rgb(232.4505046911, 226.9358024646, 227.1127665955);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .directory__card__bar .display-name {
   margin-left: 15px;
@@ -9704,7 +9766,8 @@ a.status-card.compact:hover {
   width: 100%;
   height: 100%;
   margin: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .group__detail__bar {
   display: flex;
@@ -9737,7 +9800,8 @@ a.status-card.compact:hover {
   margin: 0;
   border-radius: 4px;
   background: rgb(232.4505046911, 226.9358024646, 227.1127665955);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .group__detail__bar .display-name {
   margin-left: 15px;
@@ -10515,7 +10579,8 @@ noscript div a:hover {
   width: 100%;
   height: auto;
   margin: 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background: #000000;
 }
 .focal-point__reticle {
@@ -10620,7 +10685,8 @@ noscript div a:hover {
   background: rgb(225.858451815, 220.3745828205, 220.5507685438);
 }
 .account__header__image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   width: 100%;
   height: 100%;
@@ -10854,6 +10920,10 @@ noscript div a:hover {
   border: 0;
   outline: 0;
   border-radius: 4px;
+}
+.account__header__account-note textarea::-moz-placeholder {
+  color: rgb(116.9618884109, 112.1288661123, 112.2896206346);
+  opacity: 1;
 }
 .account__header__account-note textarea::placeholder {
   color: rgb(116.9618884109, 112.1288661123, 112.2896206346);
@@ -11097,7 +11167,9 @@ noscript div a:hover {
   border-radius: 3px;
   margin: 2px;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 0 6px;
   display: flex;
   align-items: center;
@@ -11118,7 +11190,8 @@ noscript div a:hover {
   min-width: auto;
   min-height: auto;
   vertical-align: bottom;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .reactions-bar__item__count {
   display: block;
@@ -11340,7 +11413,9 @@ noscript div a:hover {
 }
 .circle-dropdown__menu {
   flex: 1 1 auto;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 14px;
@@ -11490,7 +11565,8 @@ noscript div a:hover {
   color: rgb(102.561378293, 97.8459715859, 98.0041994637);
   position: relative;
   z-index: 1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   font-family: "object-fit: cover;";
   width: 36px;
   height: 20px;
@@ -11506,7 +11582,8 @@ noscript div a:hover {
 .thumbnail-gallery__preview {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -11527,7 +11604,8 @@ noscript div a:hover {
 .thumbnail-gallery__item-gifv-thumbnail {
   width: 36px;
   height: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -11686,7 +11764,9 @@ noscript div a:hover {
   display: block;
   width: 100%;
   height: 5px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: transparent;
 }
 .poll progress::-webkit-progress-bar {
@@ -11864,7 +11944,9 @@ noscript div a:hover {
   margin-right: 6px;
 }
 .compose-form__poll-wrapper select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box;
   font-size: 14px;
   color: rgb(48.7312530526, 44.6047960646, 44.7522715683);
@@ -11939,7 +12021,8 @@ noscript div a:hover {
   font-size: 13px;
   font-weight: 400;
   display: flex;
-  column-gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
 }
 .compose-form .compose-form__datetime-wrapper .datetime__expires-indicator .datetime__expires-indicator__icon {
   flex: 0 0 auto;
@@ -11968,7 +12051,9 @@ noscript div a:hover {
   margin-right: 0;
 }
 .compose-form .compose-form__datetime-wrapper select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box;
   font-size: 14px;
   color: rgb(48.7312530526, 44.6047960646, 44.7522715683);
@@ -12044,7 +12129,8 @@ noscript div a:hover {
   }
 }
 .introduction__illustration img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   margin: 0;
   width: 100%;
@@ -12330,7 +12416,6 @@ noscript div a:hover {
 .emoji-mart-category-label {
   z-index: 2;
   position: relative;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -12514,7 +12599,8 @@ noscript div a:hover {
 .rich-formatting table {
   width: 100%;
   border-collapse: collapse;
-  break-inside: auto;
+  -moz-column-break-inside: auto;
+       break-inside: auto;
   margin-top: 24px;
   margin-bottom: 32px;
 }
@@ -15247,6 +15333,9 @@ a.column-link {
     border-bottom: 0;
   }
 }
+.search__input::-moz-placeholder {
+  color: rgb(158.940826995, 153.8173634329, 153.9847389768);
+}
 .search__input::placeholder {
   color: rgb(158.940826995, 153.8173634329, 153.9847389768);
 }
@@ -15320,6 +15409,9 @@ a.column-link {
   color: #ffffff;
 }
 .compose-form .compose-form__modifiers .compose-form__upload-description input {
+  color: rgb(243.2821069158, 243.2821069158, 243.2821069158);
+}
+.compose-form .compose-form__modifiers .compose-form__upload-description input::-moz-placeholder {
   color: rgb(243.2821069158, 243.2821069158, 243.2821069158);
 }
 .compose-form .compose-form__modifiers .compose-form__upload-description input::placeholder {
@@ -15970,4 +16062,13 @@ a.column-link {
   background: #ffffff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='%23CEC9C9'/></svg>") no-repeat right 8px center/auto 16px;
 }
 
-/*# sourceMappingURL=takibi-modoki-pink.css.map */
+/* Dark-mode add-on */
+@media (prefers-color-scheme: dark) {
+  :root {
+    filter: invert(1) hue-rotate(180deg) contrast(0.8) brightness(1.1);
+    color-scheme: only light;
+  }
+  img, video, picture, canvas, iframe, embed, .account__avatar, .account__avatar-overlay-base, .account__avatar-overlay-overlay {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}/*# sourceMappingURL=takibi-modoki-pink.css.map */
